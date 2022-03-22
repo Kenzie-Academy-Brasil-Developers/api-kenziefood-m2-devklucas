@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* || Fonts */
+
+body{
+    font-family: 'Poppins';
+
+    font-weight: 400;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+caption{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+span, p{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+
+/* || Buttons */
+
+.btnPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+
+    width: 186px;
+    height: 48px;
+
+    background: #FF2253;
+
+    border: 1.5px solid #FF2253;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.btnPrincipal .btnDesabilitado{
+    background: #F8F9FA;
+
+    border: 1.5px solid #F8F9FA;
+}
+
+.btnPrincipal .btnProduto2{
+    background: #FFF7F4;
+
+    border: 1.5px solid #FFF7F4;
+}
+
+.btnPrincipal .btnProduto3{
+    background: #FFF1F4;
+
+    border: 1.5px solid #FFF1F4;
+}
+
+.btnPrincipal .btnProduto4{
+    background: #F3EEF5;;
+
+    border: 1.5px solid #F3EEF5;;
+}
+
+.btnCarrinho{
+    width: 38px;
+    height: 38px;
+
+    color: #0CA678;
+
+    background: #E4F7EF;
+
+    border-radius: 10px;
+}
+
+.btnCarrinho:hover{
+    color: #FFFFFF;
+
+    background: #0CA678;
+}
+
+.btnRemoverCarrinho{
+    width: 25px;
+    height: 25px;
+
+    color: #868E96;
+
+    background: #F8F9FA;
+    border-radius: 4px;
+}
+
+/* || Cards */
+
+.containerCardProduto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 303px;
+    height: 397px;
+}
+
+.containerHeaderProduto{
+    border: 3px solid #FFE9EE;
+    box-sizing: border-box;
+    border-radius: 8px
+}
+
+.containerHeaderProduto:hover{
+    border: 3px solid #FF2253;
+}
+
+.containerDetalhesProduto{
+    height: 173px;
+}
+
+/* || Carrinho */
+
+.containerCarrinho{
+    width: 320px;
+    height: 583px;
+}
+
+.containerHeaderCarrinho{
+    width: 320px;
+    height: 56px;
+
+    color: #FFFFFF;
+
+    background: #FF2253;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.containerQuantidadeCarrinho{
+    height: 58px;
+
+    background: #F8F9FA;
+}
+
+.containerTotalCarrinho{
+    height: 58px;
+
+    background-color: #FFFFFF;
+}
+
+.containerCardProdutoCarrinho{
+    width: 300px;
+    height: 84px;
+}
+
+.containerImagemProdutoCarrinho{
+    width: 70px;
+    height: 70px;
+
+    border-radius: 8px;
+}
+
+.containerDetalhesProdutoCarrinho{
+    width: 218px;
+    height: 83px;
+}
