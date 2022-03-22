@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content: center;
 }
-#todos{
+#todosCadastro{
     width: 1000px;
     height: 700px ;
     display: flex;
@@ -13,7 +13,7 @@ body{
     align-content:space-between;
     text-align: center;
 }
-#inputs{
+#inputsCadastro{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,7 +29,7 @@ h1{
     margin-top: 50px;
     color:  #FF2253;
 }
-.inputs{
+.inputsCadastrar{
     width: 490px;
     height: 40px;
     border-bottom: 15px;
@@ -60,7 +60,7 @@ h1{
     display: flex;
     justify-content: center;
 }
-#todos{
+#todosCadastro{
     width: 300px;
     height: 300px ;
     display: flex;
@@ -68,7 +68,7 @@ h1{
     align-content:space-between;
     text-align: center;
 }
-#inputs{
+#inputsCadastro{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,7 +84,7 @@ h1{
     margin-top: 50px;
     color:  #FF2253;
 }
-.inputs{
+.inputsCadastrar{
     width: 190px;
     height: 40px;
     border-bottom: 15px;
@@ -109,4 +109,5 @@ h1{
     margin: 0 auto;
     margin-top: 10px;
 }
+
 }
