@@ -1,0 +1,112 @@
+
+/* || Header */
+nav{
+    height: 70px;
+
+    width: 100%;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px -18px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.logoKenzie{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #212529;
+}
+
+.logoFood{
+    font-weight: 700;
+    font-size: 16.2712px;
+    line-height: 24px;
+
+    color: #FF2253;      
+}
+
+.containerPesquisarLogar{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+
+/* || Icons */
+
+.inputPesquisarProduto{
+    width: 342px;
+    height: 49px;
+
+    border: 1.5px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    padding-left: 35px;
+    background: url("../img/magnifying-glass-solid.svg") no-repeat #E9ECEF;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-size: 15px;
+}
+
+.iconMargin{
+    margin: 15px;
+}
+
+/* || Buttons */
+
+.btnPrincipal.btnlogin{
+    width: 342px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* || Main */
+
+main{
+    width: 100%;
+}
+
+@media (min-width: 376px){
+
+    /* || Header Desktop*/
+    nav{
+        flex-direction: row;
+    }
+
+    .containerLogo{
+        margin-left: 35px;
+    }
+
+    .containerPesquisarLogar{
+        margin-right: 35px;
+    }
+    
+    .inputPesquisarProduto{
+        width: 312px;
+    }
+
+    .containerPesquisarLogar{
+        flex-direction: row;
+    }
+
+    /* || Buttons*/
+    .btnPrincipal.btnlogin{
+        width: 186px;
+    }
+}
+
+
