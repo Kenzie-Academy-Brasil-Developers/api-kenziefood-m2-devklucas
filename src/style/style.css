@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content: center;
 }
-#todosCadastro{
+#todosCadastro , #todosLogin{
     width: 1000px;
     height: 700px ;
     display: flex;
@@ -21,6 +21,14 @@ body{
     height: 305px;
     margin: 0 auto;
 }
+#inputsLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 496px;
+    height: 305px;
+    margin: 0 auto;
+}
 h1{ 
     font-family: 'Inter', sans-serif;
     font-size: 30px;
@@ -29,7 +37,7 @@ h1{
     margin-top: 50px;
     color:  #FF2253;
 }
-.inputsCadastrar{
+.inputsCadastrar, .campoLogin{
     width: 490px;
     height: 40px;
     border-bottom: 15px;
@@ -40,7 +48,8 @@ h1{
     font-family: 'Inter', sans-serif;
     margin-bottom: 25px;
 }
-#botaoCadastar{
+
+#botaoCadastar, #botaoLogin{
     border-radius: 32px;
     width: 240px;
     height: 52px;
@@ -54,13 +63,21 @@ h1{
     margin: 0 auto;
     margin-top: 10px;
 }
+#pLogin{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
 
 @media screen and (max-width: 375px) {
-    body{
+
+ body{
     display: flex;
     justify-content: center;
 }
-#todosCadastro{
+#todosCadastro, #todosLogin{
     width: 300px;
     height: 300px ;
     display: flex;
@@ -68,7 +85,7 @@ h1{
     align-content:space-between;
     text-align: center;
 }
-#inputsCadastro{
+#inputsCadastro, #inputsLogin{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,7 +101,7 @@ h1{
     margin-top: 50px;
     color:  #FF2253;
 }
-.inputsCadastrar{
+.inputsCadastrar, .campoLogin{
     width: 190px;
     height: 40px;
     border-bottom: 15px;
@@ -95,7 +112,7 @@ h1{
     font-family: 'Inter', sans-serif;
     margin-bottom: 25px;
 }
-#botaoCadastar{
+#botaoCadastar, #botaoLogin{
     border-radius: 32px;
     width: 140px;
     height: 52px;
@@ -108,6 +125,16 @@ h1{
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 10px;
+    padding: 10px;
+}
+#pLogin{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#h1Login{
+    font-size: 25px;
 }
 
 }
