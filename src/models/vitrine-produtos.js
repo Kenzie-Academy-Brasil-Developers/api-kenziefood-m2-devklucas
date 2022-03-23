@@ -1,20 +1,23 @@
 const VitrineProdutos = class VitrineProdutos {
 
     static listarProdutos(arrayProdutos){
+      console.log('chamou função listar produto')
+
         const vitrinePrincipal = document.querySelector(".listaProdutos")
+
         vitrinePrincipal.innerHTML = ""
+        
         arrayProdutos.forEach((item)=>{
-          const li = this.templateTbody(item)
-          arrayProdutos.appendChild(li)
+          const li = this.templateVitrine(item)
+          vitrinePrincipal.appendChild(li)
     
         })
       }
-        
-      //Criando template para corpo da tabela
     
       static templateVitrine({id,nome,preco,descricao,imagem}){
         const li  = document.createElement("li")
         li.classList.add("containerCardProduto")
+
         li.innerHTML = `
         <div class="containerHeaderProduto">
         <img src="${imagem}" alt="${nome}">
@@ -33,3 +36,5 @@ const VitrineProdutos = class VitrineProdutos {
         return li
         }
 }
+
+export {VitrineProdutos}
