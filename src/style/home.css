@@ -91,12 +91,29 @@ main{
     align-items: center;
 
     flex-direction: row;
-}
 
+    margin-top: 25px;
+}
 .containerVitrine{
     padding: 10px;
 }
 
+.listaProdutos{
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+.containerCardProduto{
+    margin-right: 43px;
+}
 
 /* || Carrinho */
 
@@ -125,7 +142,7 @@ main{
     background: #FF2253;
     border-radius: 8px 8px 0px 0px;
 
-    position:absolute;
+    position:fixed;
 	bottom:0;
 }
 
@@ -165,6 +182,13 @@ main{
 
     justify-content: space-between;
     align-items: center;
+}
+
+/* || Card Produto */
+
+.marginTopBottom10px{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 376px){
@@ -221,6 +245,10 @@ main{
     .containerHeaderCarrinho{
         position: absolute;
         top: 0;
+    }
+
+    .containerVitrine{
+        padding: 100px;
     }
 
 }
