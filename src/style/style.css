@@ -41,6 +41,10 @@ span, p{
 
 /* || Buttons */
 
+button{
+    cursor: pointer;
+}
+
 .btnPrincipal{
     display: flex;
     flex-direction: row;
@@ -52,7 +56,6 @@ span, p{
     font-weight: 500;
     font-size: 16px;
 
-    width: 186px;
     height: 48px;
 
     color: #FFFFFF;
@@ -64,7 +67,13 @@ span, p{
     border-radius: 30px;
 }
 
-.btnPrincipal.btnDesabilitado{
+.btnPrincipal:hover{
+    color: #FFFFFF;
+
+    background: #FF2253;
+}
+
+.btnCinza{
 
     color: #212529;
     background: #F8F9FA;
@@ -72,25 +81,30 @@ span, p{
     border: 1.5px solid #F8F9FA;
 }
 
-.btnPrincipal.btnProduto2{
+.btnTodos{
+    margin-right: 28px;
+}
+
+.btnProdutoCategoria{
+    margin-right: 28px;
 
     color: #212529;
+}
+
+.btnProduto2{
     background: #FFF7F4;
 
     border: 1.5px solid #FFF7F4;
 }
 
-.btnPrincipal.btnProduto3{
+.btnProduto3{
 
-    color: #212529;
     background: #FFF1F4;
 
     border: 1.5px solid #FFF1F4;
 }
 
-.btnPrincipal.btnProduto4{
-
-    color: #212529;
+.btnProduto4{
     background: #F3EEF5;;
 
     border: 1.5px solid #F3EEF5;;
@@ -146,51 +160,5 @@ span, p{
 
 .containerDetalhesProduto{
     height: 173px;
-}
-
-/* || Carrinho */
-
-.containerCarrinho{
-    width: 320px;
-    height: 583px;
-}
-
-.containerHeaderCarrinho{
-    width: 320px;
-    height: 56px;
-
-    color: #FFFFFF;
-
-    background: #FF2253;
-    border-radius: 8px 8px 0px 0px;
-}
-
-.containerQuantidadeCarrinho{
-    height: 58px;
-
-    background: #F8F9FA;
-}
-
-.containerTotalCarrinho{
-    height: 58px;
-
-    background-color: #FFFFFF;
-}
-
-.containerCardProdutoCarrinho{
-    width: 300px;
-    height: 84px;
-}
-
-.containerImagemProdutoCarrinho{
-    width: 70px;
-    height: 70px;
-
-    border-radius: 8px;
-}
-
-.containerDetalhesProdutoCarrinho{
-    width: 218px;
-    height: 83px;
 }
 

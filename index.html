@@ -24,31 +24,32 @@
                 <form action="" class="formPesquisarProduto">
                     <input type="text" class="inputPesquisarProduto" placeholder="Pesquisar por Produto"> 
                 </form>
-                <div class="containerLogin">
-                    <button class="btnPrincipal btnlogin">
-                        <i class="fa-solid fa-user iconMargin"></i>
-                        Login
-                    </button>
-                </div>
+                <a href="./src/pages/login.html">
+
+                </a>
+                <button class="btnPrincipal btnlogin" onclick="window.location.href='./src/pages/login.html';">
+                    <i class="fa-solid fa-user iconMargin"></i>
+                    Login
+                </button>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="containerVitrine">
         <section class="containerFiltros">
             <button class="btnPrincipal btnTodos">
                 Todos
             </button>
 
-            <button class="btnPrincipal btnProduto2">
+            <button class="btnPrincipal btnProdutoCategoria btnProduto2">
                 <img class="iconMargin" src="./src/img/Icon_bread.svg" alt="icone">
                 Panificadora
             </button>
-            <button class="btnPrincipal btnProduto3">
+            <button class="btnPrincipal btnProdutoCategoria btnProduto3">
                 <img class="iconMargin" src="./src/img/Icon_fruits.svg" alt="icone">
                 Frutas
             </button>
-            <button class="btnPrincipal btnProduto4">
+            <button class="btnPrincipal btnProdutoCategoria btnProduto4">
                 <img class="iconMargin" src="./src/img/Icon_glass_of_wine.svg" alt="icone">
                 Bebidas
             </button>
@@ -57,14 +58,25 @@
 
         <section class="containerVitrine">
 
+            <aside>
+                <section class="containerCarrinho">
+                    <div class="containerHeaderCarrinho">
+                        <i class="fa-solid fa-cart-plus iconMargin"></i>
+                        Carrinho
+                    </div>
+                    <!-- 
+                    <div class="containerQuantidadeCarrinho"></div>
+                    <div class="containerTotalCarrinho"></div>
+                    -->
+        
+                </section>
+            </aside>
         </section>
+
+        
         
     </main>
-    <aside>
-        <section class="containerCarrinho">
-
-        </section>
-    </aside>
+    
 
     <script type="module" src="./src/script/script.js"></script>
     
