@@ -1,0 +1,3 @@
+const Produto = class Produto{
+    
+}
