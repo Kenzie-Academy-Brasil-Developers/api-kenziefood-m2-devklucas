@@ -34,6 +34,16 @@ const VitrineProdutos = class VitrineProdutos {
         `
         return li
         }
+
+        static filtrarProdutos(arrayProdutos,filtro){
+          let arrayFiltrado = [{}]
+          
+          arrayFiltrado = arrayProdutos.filter(function(item){
+            return (item.categoria === filtro);
+          })
+          
+          this.listarProdutos(arrayFiltrado)
+        }
 }
 
 export {VitrineProdutos}
