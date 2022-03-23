@@ -91,12 +91,29 @@ main{
     align-items: center;
 
     flex-direction: row;
-}
 
+    margin-top: 25px;
+}
 .containerVitrine{
     padding: 10px;
 }
 
+.listaProdutos{
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+.containerCardProduto{
+    margin-right: 43px;
+}
 
 /* || Carrinho */
 
@@ -125,7 +142,7 @@ main{
     background: #FF2253;
     border-radius: 8px 8px 0px 0px;
 
-    position:absolute;
+    position:fixed;
 	bottom:0;
 }
 
@@ -159,10 +176,31 @@ main{
 }
 
 
+.footerCarrinho{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* || Card Produto */
+
+.marginTopBottom10px{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media (min-width: 376px){
 
     /* || Header Desktop*/
-    nav{
+
+    header{
+        position: fixed;
+        top: 0;
+    }
+
+    nav{       
         flex-direction: row;
     }
 
@@ -187,16 +225,15 @@ main{
     }
 
     /* || Main */
+
+    .containerFiltros{
+        margin-top: 100px;
+    }
     /* || Aside */
 
-    aside{
-        position: sticky;
-        float: right;
-
-        margin-right: 100px;
-    }
-
     .containerCarrinho{
+        position: sticky;
+
         width: 320px;
         height: 352px;
 
@@ -213,6 +250,14 @@ main{
     .containerHeaderCarrinho{
         position: absolute;
         top: 0;
+    }
+
+    .containerVitrine{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        padding: 100px;
     }
 
 }
