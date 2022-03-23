@@ -1,0 +1,220 @@
+/* || Header */
+header{
+    width: 100%;
+}
+
+nav{
+    z-index: 5;
+
+    height: max-content;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px -18px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.logoKenzie{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #212529;
+}
+
+.logoFood{
+    font-weight: 700;
+    font-size: 16.2712px;
+    line-height: 24px;
+
+    color: #FF2253;      
+}
+
+.containerPesquisarLogar{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+
+/* || Icons */
+
+.inputPesquisarProduto{
+    width: 342px;
+    height: 49px;
+
+    border: 1.5px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+    padding-left: 35px;
+    background: url("../img/magnifying-glass-solid.svg") no-repeat #E9ECEF;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-size: 15px;
+}
+
+.iconMargin{
+    margin-right: 15px;
+}
+
+/* || Buttons */
+
+.btnlogin{
+    width: 342px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* || Main */
+
+main{
+    width: 100%;
+}
+
+
+.containerFiltros{
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+
+    flex-direction: row;
+}
+
+.containerVitrine{
+    padding: 10px;
+}
+
+
+/* || Carrinho */
+
+.containerCarrinho{
+    width: 320px;
+    height: 583px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+}
+
+.containerHeaderCarrinho{
+    width: 320px;
+    height: 56px;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    background: #FF2253;
+    border-radius: 8px 8px 0px 0px;
+
+    position:absolute;
+	bottom:0;
+}
+
+.containerQuantidadeCarrinho{
+    height: 58px;
+
+    background: #F8F9FA;
+}
+
+.containerTotalCarrinho{
+    height: 58px;
+
+    background-color: #FFFFFF;
+}
+
+.containerCardProdutoCarrinho{
+    width: 300px;
+    height: 84px;
+}
+
+.containerImagemProdutoCarrinho{
+    width: 70px;
+    height: 70px;
+
+    border-radius: 8px;
+}
+
+.containerDetalhesProdutoCarrinho{
+    width: 218px;
+    height: 83px;
+}
+
+
+@media (min-width: 376px){
+
+    /* || Header Desktop*/
+    nav{
+        flex-direction: row;
+    }
+
+    .containerLogo{
+        margin-left: 100px;
+    }
+
+    .containerPesquisarLogar{
+        margin-right: 100px;
+        flex-direction: row;
+    }
+    
+    .inputPesquisarProduto{
+        width: 312px;
+    }
+
+    /* || Buttons*/
+
+    .btnlogin{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /* || Main */
+    /* || Aside */
+
+    aside{
+        position: sticky;
+        float: right;
+
+        margin-right: 100px;
+    }
+
+    .containerCarrinho{
+        width: 320px;
+        height: 352px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        background: #F8F9FA;    
+
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    .containerHeaderCarrinho{
+        position: absolute;
+        top: 0;
+    }
+
+}
+
+
