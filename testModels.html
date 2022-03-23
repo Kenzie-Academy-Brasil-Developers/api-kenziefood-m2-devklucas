@@ -1,100 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://kit.fontawesome.com/d2513fc0f7.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="./src/style/reset.css">
-    <link rel="stylesheet" href="./src/style/style.css">
-    <link rel="stylesheet" href="./src/style/home.css">
-
-    <title>Kenzie Food</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="containerLogo">
-                <span class="logoKenzie">Kenzie</span>
-                <span class="logoFood">Food</span>
-            </div>
-            <div class="containerPesquisarLogar">
-                <form action="" class="formPesquisarProduto">
-                    <input type="text" class="inputPesquisarProduto" placeholder="Pesquisar por Produto"> 
-                </form>
-                <button class="btnPrincipal btnlogin" onclick="window.location.href='./src/pages/login.html';">
-                    <i class="fa-solid fa-user iconMargin"></i>
-                    Login
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="containerFiltros">
-            <button class="btnPrincipal btnProdutoCategoria btnProduto1">
-                Todos
+<div class="containerHeaderProduto">
+    <img src="${imagem}" alt="${nome}">
+    </div>
+    <div class="containerDetalhesProduto">
+        <h1 class="marginTopBottom10px">${nome}</h1>
+        <p class="marginTopBottom10px">${descricao}</p>
+        <p class="marginTopBottom10px">${categoria}</p>
+        <div class="footerCarrinho">
+            <h2 class="marginTopBottom10px">${}</h2>
+            <button id="${id}" class="btnCarrinho marginTopBottom10px">
+                <i class="fa-solid fa-cart-plus"></i>
             </button>
-
-            <button class="btnPrincipal btnProdutoCategoria btnProduto2">
-                <img class="iconMargin" src="./src/img/Icon_bread.svg" alt="icone">
-                Panificadora
-            </button>
-            <button class="btnPrincipal btnProdutoCategoria btnProduto3">
-                <img class="iconMargin" src="./src/img/Icon_fruits.svg" alt="icone">
-                Frutas
-            </button>
-            <button class="btnPrincipal btnProdutoCategoria btnProduto4">
-                <img class="iconMargin" src="./src/img/Icon_glass_of_wine.svg" alt="icone">
-                Bebidas
-            </button>
-
-        </section>
-
-        <section class="containerVitrine">
-            <ul class="listaProdutos">
-                <li class="containerCardProduto">
-                    <div class="containerHeaderProduto">
-                        <img src="" alt="">
-
-                    </div>
-                    <div class="containerDetalhesProduto">
-                        <h1></h1>
-                        <caption></caption>
-                        <div class="footerCarrinho">
-                            <h2></h2>
-                            <button class="btnCarrinho">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                </li>
-
-            </ul>
-            <aside>
-                <section class="containerCarrinho">
-                    <div class="containerHeaderCarrinho">
-                        <i class="fa-solid fa-cart-plus iconMargin"></i>
-                        Carrinho
-                    </div>
-                    <!-- 
-                    <div class="containerQuantidadeCarrinho"></div>
-                    <div class="containerTotalCarrinho"></div>
-                    -->
-        
-                </section>
-            </aside>
-        </section>
-
-        
-        
-    </main>
-    
-
-    <script type="module" src="./src/script/script.js"></script>
-    
-</body>
-</html>
+        </div>
+    </div>

@@ -1,8 +1,6 @@
 const VitrineProdutos = class VitrineProdutos {
 
     static listarProdutos(arrayProdutos){
-      console.log('chamou função listar produto')
-
         const vitrinePrincipal = document.querySelector(".listaProdutos")
 
         vitrinePrincipal.innerHTML = ""
@@ -35,6 +33,16 @@ const VitrineProdutos = class VitrineProdutos {
         </div>
         `
         return li
+        }
+
+        static filtrarProdutos(arrayProdutos,filtro){
+          let arrayFiltrado = [{}]
+          
+          arrayFiltrado = arrayProdutos.filter(function(item){
+            return (item.categoria === filtro);
+          })
+          
+          this.listarProdutos(arrayFiltrado)
         }
 }
 
