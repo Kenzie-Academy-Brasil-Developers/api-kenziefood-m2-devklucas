@@ -81,6 +81,7 @@ nav{
 
 main{
     width: 100%;
+    overflow-x: auto;
 }
 
 
@@ -93,6 +94,7 @@ main{
     flex-direction: row;
 
     margin-top: 25px;
+    margin-left: 10px;
 }
 .containerVitrine{
     padding: 10px;
@@ -109,6 +111,7 @@ main{
     flex-wrap: wrap;
 
     margin-top: 25px;
+    min-width: 692px;
 }
 
 .containerCardProduto{
@@ -228,11 +231,13 @@ main{
 
     .containerFiltros{
         margin-top: 100px;
+        margin-left: 100px;
     }
     /* || Aside */
 
     .containerCarrinho{
         position: sticky;
+        z-index:-1;
 
         width: 320px;
         height: 352px;
@@ -257,7 +262,7 @@ main{
         flex-direction: row;
 
         justify-content: space-between;
-        padding: 100px;
+        padding: 50px 100px;
     }
 
 }
