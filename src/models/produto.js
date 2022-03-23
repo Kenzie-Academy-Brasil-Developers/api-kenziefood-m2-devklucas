@@ -1,5 +1,6 @@
 const Produto = class Produto{
-    constructor(nome,preco,descricao,imagem,createdAt,updatedAt){
+    constructor(id,nome,preco,descricao,imagem,createdAt,updatedAt){
+        this._id = id
         this._nome = nome
         this._preco = preco
         this._descricao = descricao

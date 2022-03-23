@@ -119,7 +119,8 @@ button{
 
     background: #E4F7EF;
 
-    border-radius: 10px;
+    border: 1.5px solid #E4F7EF;
+    border-radius: 38px;
 }
 
 .btnCarrinho:hover{
