@@ -38,7 +38,6 @@ span, p{
 }
 
 
-
 /* || Buttons */
 
 button{
@@ -58,11 +57,11 @@ button{
 
     height: 48px;
 
-    color: #FFFFFF;
+    color: #212529;
 
-    background: #FF2253;
+    background: #F8F9FA;
 
-    border: 1.5px solid #FF2253;
+    border: 1.5px solid #F8F9FA;
     box-sizing: border-box;
     border-radius: 30px;
 }
@@ -73,16 +72,11 @@ button{
     background: #FF2253;
 }
 
-.btnCinza{
+.btnVermelho{
+    color: #FFFFFF;
+    background: #FF2253;
 
-    color: #212529;
-    background: #F8F9FA;
-
-    border: 1.5px solid #F8F9FA;
-}
-
-.btnTodos{
-    margin-right: 28px;
+    border: 1.5px solid #FF2253;
 }
 
 .btnProdutoCategoria{
@@ -90,6 +84,13 @@ button{
 
     color: #212529;
 }
+
+.btnProduto1{
+    background: #EEF6FF;
+
+    border: 1.5px solid #EEF6FF;
+}
+
 
 .btnProduto2{
     background: #FFF7F4;
