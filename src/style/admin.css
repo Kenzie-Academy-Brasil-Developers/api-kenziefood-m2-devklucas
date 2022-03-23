@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kenzieFood{
+    display: flex;
+    align-items: center;
+    margin-left: 117px;  
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+    height: 72px;    
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color:#212529;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:#212529;
+    line-height: 24px;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #FF2253;
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+
+.pesquisa{
+    width: 348px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 118px;
+}
+
+.pesquisa img{
+    width: 36px;
+    height: 36px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.pesquisa input{
+    width: 312px;
+    height: 49px;
+    background-color:  #E9ECEF;
+    border: 1.5px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 15px 18px 15px 16px;  
+    margin-right: 34px; 
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+    height: 48px;
+    margin-top: 44px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;    
+    
+}
+
+.adicionarproduto{
+    width:  217px;
+    height: 48px;
+    margin-right: 115px;
+    background: #FF2253;
+    border: 1.5px solid #FF2253;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+.categoria{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 49px;
+    margin-left: 118px;
+}
+
+.todos{
+    width: 88px;
+    height: 48px;
+    background-color: #FF2253;
+    border: 1.5px solid #FF2253;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    padding: 15px 20px;
+}
+
+.panificadora{
+    display: flex;
+    width: 170px;
+    height: 49px;
+    padding: 15px 20px;
+    border: 1.5px solid #FFF7F4;
+    background: #FFF7F4;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+.panificadora img{
+    margin-right: 15px;
+}
+
+.frutas{
+    display: flex;
+    width: 123px;
+    height: 48px;
+    border: 1.5px solid #FFF1F4;
+    background-color: #FFF1F4;
+    box-sizing: border-box;
+    border-radius: 32px;
+    padding: 15px 20px;
+}
+
+.frutas img{
+    margin-right: 15px;
+}
+
+.bebidas{
+    display: flex;
+    width: 136px;
+    height: 48px;
+    padding: 15px 20px;
+    border: 1.5px solid #F3EEF5;
+    background: #F3EEF5;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+.bebidas img{
+    margin-right: 15px;
+}
+
+.listadeProdutos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 57px;
+}
+
+.tituloListaProdutos{
+    width: 1600px;
+    display: flex;
+    margin-top: 54px;
+    margin-bottom: 31px;   
+}
+
+.tituloListaProdutos p{
+    color: #868E96;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tituloProduto{
+    margin: 0 0 0 136px;
+}
+
+.tituloCategoria{
+    margin: 0 0 0 277px;
+}
+
+.tituloDescricao{
+    margin: 0 0 0 381px;
+}
+
+.tituloAcoes{
+    margin: 0 178px 0 382px;
+}
+
+.cartaoProdutos{    
+    width: 1370px;
+    height: 62px;
+    display: flex;
+    margin: auto;   
+    margin-bottom: 20px;
+}
+
+.nomeProduto{
+    width: 310px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nomeProduto p{ 
+    margin-left: 24px;   
+    color: #212529;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.categoriaProduto{
+    width: 430px;
+    margin-left: 22px;
+    display: flex;
+}
+.categoriaProduto span{ 
+    width: 430px;   
+    height: 27px;
+    display: flex;
+    margin: auto;
+}
+
+.categoriaProduto span p{
+    width:  93px;
+    height: 27px;
+    text-align: center;
+    background-color: #F8F9FA;
+    color: #868E96;    
+    border-radius: 8px;
+    line-height: 25px;    
+    margin: 0 9px 0 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.categoriaDescricao{ 
+    width: 432px;   
+    margin-left: 20px;
+    display: flex;
+}
+
+.categoriaDescricao span{
+    margin: auto;
+    margin-left: 0;
+}
+
+.categoriaDescricao span{ 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #868E96;
+}
+
+.categoriaAcoes{
+    width: 91px;   
+    margin-left: 20px;
+    margin-right: 12px;
+    display: flex;
+    
+}
+.categoriaAcoes span{
+    width: 91px; 
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.categoriaAcoes button{    
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+}
+
+.categoriaAcoes button img{
+    margin: auto;
+}
