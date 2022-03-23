@@ -194,7 +194,13 @@ main{
 @media (min-width: 376px){
 
     /* || Header Desktop*/
-    nav{
+
+    header{
+        position: fixed;
+        top: 0;
+    }
+
+    nav{       
         flex-direction: row;
     }
 
@@ -219,16 +225,15 @@ main{
     }
 
     /* || Main */
+
+    .containerFiltros{
+        margin-top: 100px;
+    }
     /* || Aside */
 
-    aside{
-        position: sticky;
-        float: right;
-
-        margin-right: 100px;
-    }
-
     .containerCarrinho{
+        position: sticky;
+
         width: 320px;
         height: 352px;
 
@@ -248,6 +253,10 @@ main{
     }
 
     .containerVitrine{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
         padding: 100px;
     }
 
