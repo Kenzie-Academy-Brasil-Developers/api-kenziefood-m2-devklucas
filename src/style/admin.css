@@ -232,6 +232,7 @@ nav{
     line-height: 20px;
 }
 
+
 .categoriaProduto{
     width: 430px;
     margin-left: 22px;
@@ -320,7 +321,7 @@ nav{
 }
 
 .statusPositivo{
-    visibility: visible; 
+    visibility: visible;
     border-bottom: solid 8px #39DF8F;
     background-color: #FFFFFF;
 }
@@ -372,6 +373,7 @@ nav{
     color: #212529;
     margin: 15px 20px 18px 28px;
 }
+
 
 @media screen and (max-width: 375px) {
 
