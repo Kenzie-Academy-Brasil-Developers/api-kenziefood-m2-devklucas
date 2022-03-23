@@ -1,8 +1,6 @@
 const VitrineProdutos = class VitrineProdutos {
 
     static listarProdutos(arrayProdutos){
-      console.log('chamou função listar produto')
-
         const vitrinePrincipal = document.querySelector(".listaProdutos")
 
         vitrinePrincipal.innerHTML = ""
