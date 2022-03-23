@@ -1,0 +1,55 @@
+import { TemplateAdmin } from "../models/template-admin.js"
+
+export class CrudProdutos{
+    static ROTA = 'https://kenzie-food-api.herokuapp.com'
+
+    static async pegarMeusProdutos(token){
+    
+        const resposta = await fetch(`${this.ROTA}/my/products`,{
+              headers : 
+                 {Authorization: `Bearer ${token}`}
+            
+         })
+         const dadosResposta = await resposta.json()
+       
+        return TemplateAdmin.mostrarProdutos(dadosResposta) //Retorna um array de produtos com usuário autenticado 
+    }
+    
+    static async adicionarMeusProdutos(token,data){
+        
+        const resposta = await fetch(`${this.ROTA}/my/products`,{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+                "Authorization": `Bearer ${token}`},
+            body:JSON.stringify(data)
+          
+       })
+       const dadosResposta = await resposta.json()
+       return dadosResposta //Retorna dados do produto criado(id,nome,preco,categoria,urlImagem, descrição)
+    }
+    static async editarMeusProdutos(token,idProduto, data){
+        const resposta = await fetch(`${this.ROTA}/my/products/${idProduto}`,{
+            method : "PATCH",
+            headers : {
+                "Content-Type" : "application/json",
+                "Authorization": `Bearer ${token}`},
+            body:JSON.stringify(data)
+          
+       })
+       const dadosResposta = await resposta.json()
+       return dadosResposta//Retorna "Produto Atualizado" ou mensagem de erro
+    }
+    static async apagarMeusProdutos(token,idProduto){
+        const resposta = await fetch(`${this.ROTA}/my/products/${idProduto}`,{
+            method: "Delete",
+            headers: {
+                "Authorization": `Bearer ${token}`
+            }
+        })
+        const dadosResposta = await resposta.json()
+        return console.log(dadosResposta) //api só retorna mensagem de erro, em caso de sucesso nao há retorno
+    }
+} 
+
+
