@@ -10,7 +10,7 @@ export class TemplateAdmin{
             li.classList.add('cartaoProdutos')
             li.innerHTML = 
             `<div class="nomeProduto">
-                        <img src="${data[i].imagem}" alt="${data[i].nome}">
+                        <img class='nomeProdutoImg' src="${data[i].imagem}" alt="${data[i].nome}">
                         <p>${data[i].nome}</p>
                     </div>
                     <div class="categoriaProduto">

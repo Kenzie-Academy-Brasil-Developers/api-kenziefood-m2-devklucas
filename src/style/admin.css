@@ -236,7 +236,11 @@ nav{
     font-size: 14px;
     line-height: 20px;
 }
-
+.nomeProdutoImg{
+    width:33px;
+    height:32px;
+    border-radius: 180px;
+}
 
 .categoriaProduto{
     width: 430px;
@@ -724,10 +728,12 @@ nav{
         margin-bottom: 8px;
     }
 
-    .nomeProduto img{
+    .nomeProdutoImg{
         width: 60px;
+        height: 60px;
         margin-bottom: 8px;        
         margin-top: 8px;
+        border-radius:15px;
     }
 
     .nomeProduto p{ 
