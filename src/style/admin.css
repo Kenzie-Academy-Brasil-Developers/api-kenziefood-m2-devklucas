@@ -400,6 +400,35 @@ nav{
     top: 20%;
     left: 35%;
 }
+.cabecalhoExclusaoProduto{
+    display: flex;
+    width: 496px;
+    height: 70px;
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+
+}
+.cabecalhoExclusaoProduto p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin: 25px 265px 25px 28px;
+}
+
+.cabecalhoExclusaoProduto button{
+    width: 30px;
+    height: 30px;
+    background: #E9ECEF;
+    border-radius: 4px;
+    color: #868E96;
+    border: none;
+    margin: 25px 25px 25px 0;
+}
+
+
+
 
 .cabecalho{
     background: #F8F9FA;
@@ -444,6 +473,13 @@ nav{
     background-color: #FFFFFF;
     border-radius: 0 0 8px 8px;
 }
+
+#h3Excluir{
+    width: 400px;
+    height: 50px;
+    margin: 50px 60px 50px 60px;
+}
+
 #formularioEdicaoCadastro{
     width: 496px;
     height: 685px;
@@ -1073,46 +1109,75 @@ nav{
     
     .modalContainer{
         position: absolute;
-        width: 370px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         left: 0px;
         top: 0px;
         background: rgba(0, 0, 0, 0.5);
     }
     
     .todosExcluir{
-        width: 496px;
-        height: 283px;
+        width: 120px;
+        height: 103px;
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 20%;
         left: 35%;
     }
+    .cabecalhoExclusaoProduto{
+        display: flex;
+        width: 220px;
+        height: 70px;
+        background: #F8F9FA;
+        border-radius: 8px 8px 0px 0px;
+    
+    }
+    .cabecalhoExclusaoProduto p{
+        width: 180px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        color: #000000;
+        margin: 25px 0px 25px 28px;
+    }
+    
+    .cabecalhoExclusaoProduto button{
+        width: 15px;
+        height: 15px;
+        background: #E9ECEF;
+        border-radius: 4px;
+        color: #868E96;
+        border: none;
+        margin: 25px 25px 25px 30px;
+    }
+    
+    
+    
     
     .cabecalho{
         background: #F8F9FA;
         display: flex;
         justify-content: center;
-        width: 220px;
-        height: 40px;
+        width: 496px;
+        height: 70px;
         border-radius: 8px 8px 0px 0px;
     }
     
     .cabecalho h3{
-
-        width: 253px;
+        width: 250px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-        margin: 10px  25px 28px
+        margin: 25px 265px 25px 28px
     }
     
     .cabecalho button{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         font-family: 'Nunito';
         font-weight: 400;
         font-size: 14px;
@@ -1125,101 +1190,114 @@ nav{
     }
     
     .textoExcluir{
-        width: 496px;
+        width: 220px;
         height: 213px;
         font-family: 'Poppins';
         font-weight: 500;
-        font-size: 16px;
+        font-size: 10px;
         line-height: 27px;
         background-color: #FFFFFF;
         border-radius: 0 0 8px 8px;
     }
+    
+    #h3Excluir{
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin: 50px 20px 50px 20px;
+    }
+    
     #formularioEdicaoCadastro{
-        width: 220px;
-        height: 700px;
+        width: 496px;
+        height: 685px;
     }
     .tituloNomeProduto{
         align-items: center;
-        width: 160px;
+        width: 150px;
         height: 20px;
         color: #212529;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 10px;
-        margin: 25px 350px 0px 32px;
+        font-size: 14px;
+        margin: 25px 350px 0px 30px;
     }
     
     #nomeProduto{
-        width: 150px;
-        height: 40px;
+        width: 440px;
+        height: 52px;
         background: #F8F9FA;
         border: 1.5px solid #DEE2E6;
         box-sizing: border-box;
         border-radius: 12px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 8px;
+        font-size: 16;
         color: #868E96;
-        padding: 5px;
-        margin: 5px 28px 20px 28px;
+        padding: 15px;
+        margin: 10px 28px 40px 28px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
     }
     .descriçãoProduto {
         align-items: center;
-        width: 150px;
-        height: 15px;
-        color: #212529;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
+        line-height: 0px;
+        color: #212529;
         margin-left: 28px;
-        margin-bottom: 0px;
-        
+        margin-bottom: 10px;
     }
     
     #descricaoProduto{
-        background: #F8F9FA; 
-        width: 150px;
-        height: 40px;
+        background: #F8F9FA;
+        width: 440px;
+        height: 52px;
         border: 1.5px solid #DEE2E6;
         box-sizing: border-box;
         border-radius: 12px;
-        padding: 5px;
-        margin: 0px 28px 30px 28px;
+        padding: 15px;
+        margin: 0px 28px 40px 28px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 8px;
+        font-size: 16px;
     }
     
     .selecaoCategoria{
-        align-items: center;
-        width: 150px;
-        height: 20px;
-        color: #212529;
+        width: 100px;
+        height: 30px;
+        padding: 5px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
+        line-height: 0px;
+        color: #212529;
         margin-left: 28px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
         
     }
     
     #selecionarCategoria{
         display: flex;
-        justify-content: center;
-        width: 220px;
+        justify-content: space-around;
     }
     
     
     .textoExcluir p{
-        margin: 50px 60px 50px 60px;
+        margin: auto;
     }
     
     .opcoesSelecionar{
+        margin-top: 0;
         width: 220px;
-        height: 40px;
+        height: 32px;
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 38px;
     }
     .botaoCategoria:hover{
         background: #FF2253;
@@ -1230,23 +1308,25 @@ nav{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 10px;
-        margin-top: 25px;
+        font-size: 14px;
+        line-height: 10px;
     }
     
     .opcoesSelecionar button{
-        width: 60px;
+        width: 80px;
         height: 20px;
         border: 1.5px solid #F8F9FA;
         box-sizing: border-box;
         border-radius: 32px;
         background: #F8F9FA;
+        margin-right: 20px;
+        margin-left: 20px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
-        font-size: 8px;
+        font-size: 10px;
         line-height: 17px;
-        margin: auto;
+        
     }
     
     .valorDoProduto{
@@ -1254,36 +1334,36 @@ nav{
         height: 20px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 15px;
         color: #212529;
         margin-left: 28px;
     }
-    #valorProduto{ 
-        width: 150px;
-        height: 40px;
+    #valorProduto{
+        width: 440px;
+        height: 52px;
         border: 1.5px solid #DEE2E6;
         background: #F8F9FA;
         box-sizing: border-box;
         border-radius: 12px;
-        margin: 0px 28px 20px 28px;
-        padding: 5px;
+        margin: 16px 28px 40px 28px;
+        padding: 15px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 8px;
+        font-size: 16px;
     }
-    #linkImagem{ 
-        width: 150px;
-        height: 40px;
+    #linkImagem{
+        width: 440px;
+        height: 52px;
         border: 1.5px solid #DEE2E6;
         background: #F8F9FA;
         box-sizing: border-box;
         border-radius: 12px;
-        margin: 5px 28px 30px 28px;
-        padding: 5px;
+        margin: 16px 28px 40px 28px;
+        padding: 15px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 8px;
+        font-size: 16px;
     }
     
     .linkImgProduto{
@@ -1291,7 +1371,7 @@ nav{
         height: 20px;
         font-family: 'Inter';
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 15px;
         color: #212529;
         margin-left: 28px;
@@ -1315,21 +1395,21 @@ nav{
     }
     
     .botaoDeDecisao{
-        width: 220px;
-        height: 35px;
+        width: 100%;
+        height: 80px;
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     
     #botaoExcluirProduto{
-        width: 100px;
-        height: 30px;
+        width: 80px;
+        height: 50px;
         background: #F8F9FA;
         color: #868E96;
         font-family: 'Inter';
         font-weight: 500;
-        font-size: 8px;
+        font-size: 16px;
         line-height: 19px;
         margin-bottom: 50px;
         border: 1.5px solid #F8F9FA;
@@ -1340,16 +1420,16 @@ nav{
     }
     
     #botaoSalvarProduto{
-        width: 100px;
-        height: 30px;
+        width: 240px;
+        height: 50px;
         background: #FF2253;
         border: 1.5px solid #FF2253;
         box-sizing: border-box;
         border-radius: 32px;
         font-family: 'Inter';
         font-weight: 500;
-        font-size: 8px;
-        line-height: 10px;
+        font-size: 16px;
+        line-height: 19px;
         color: #F8F9FA;
         margin: 0 28px 0 8px;
     }
@@ -1373,4 +1453,4 @@ nav{
     .hidden {   
         visibility: hidden;
     }
-}
+}    

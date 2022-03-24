@@ -57,14 +57,14 @@
         </div>
         <p class="informacaoStatus"> Produto adicionado com sucesso. </p>
     </div>
-    <div class="modalContainer hidden">
+    <div class="modalContainer ">
         <div class="todosExcluir">
-            <div class="cabecalho">
+            <div class="cabecalhoExclusaoProduto">
                 <p>Exclusão de Produto</p>
                 <button>X</button>
             </div>
             <div class="textoExcluir">
-                <h3>Tem certeza que deseja excluir esse produto?</h3>
+                <h3 id="h3Excluir">Tem certeza que deseja excluir esse produto?</h3>
                 <div class="opcoesSelecionar">
                     <button>Sim</button>
                     <button>Não</button>
@@ -95,8 +95,7 @@
             <button id="botaoCadastroProduto" type="submit">Cadastrar Produto</button>
         </form>
     </div>
-------------------------------------------------
-    <div class="modalContainer  ">
+    <div class="modalContainer hidden ">
         <div class="cabecalho modalCentralizado">
             <h3 id="tituloFormulario">Edição de Produto</h3>
             <button>X</button>
