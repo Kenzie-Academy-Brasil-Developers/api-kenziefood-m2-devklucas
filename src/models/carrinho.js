@@ -53,8 +53,8 @@ export class Carrinho{
     }
 
     static atualizarInformacoes(deveSomar, preco) {
-        const quantidade = document.querySelector('#qtdTotalCompra');
-        const total = document.querySelector('#precoTotalCompra');
+        const quantidade = document.getElementById('qtdTotalCompra');
+        const total = document.getElementById('precoTotalCompra');
 
         if (deveSomar) {
          //atualizando variaveis numericas
