@@ -33,7 +33,7 @@
             <button class="adicionarproduto">Adicionar novo produto</button>
         </nav>
         <ul class='listadeProdutos'>
-           <li class="tituloListaProdutos hidden">
+            <li class="tituloListaProdutos hidden">
                 <div class="tituloProduto">
                     <p>Produto</p>
                 </div>
@@ -48,7 +48,7 @@
                 </div>
             </li>
         </ul>
-        
+
     </main>
     <div class="status hidden">
         <div class="cabecalhoStatus">
@@ -72,13 +72,13 @@
             </div>
         </div>
     </div>
-    <div class="modalContainer ">
+    <div class="modalContainer hidden">
         <div class="cabecalho modalCentralizado">
             <h3 id="tituloFormulario">Cadastro de Produto</h3>
             <button>X</button>
         </div>
         <form id="formularioEdicaoCadastro" class="formulario modalCentralizado">
-            <label  class= "tituloNomeProduto"for="nomeProduto">Nome do Produto</label>
+            <label class="tituloNomeProduto" for="nomeProduto">Nome do Produto</label>
             <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Digitar o nome">
             <label class="descriçãoProduto" for="descricaoProduto">Descrição</label>
             <input type="text" name="descricaoProduto" id="descricaoProduto" placeholder="Digitar a  Descrição">
@@ -94,8 +94,34 @@
             <input type="url" name="linkImagem" id="linkImagem" placeholder="Inserir Link">
             <button id="botaoCadastroProduto" type="submit">Cadastrar Produto</button>
         </form>
-
     </div>
-    <script type="module" src="../script/admin.js"></script>
+
+    <div class="modalContainer hidden ">
+        <div class="cabecalho modalCentralizado">
+            <h3 id="tituloFormulario">Edição de Produto</h3>
+            <button>X</button>
+        </div>
+        <form id="formularioEdicaoCadastro" class="formulario modalCentralizado">
+            <label class="tituloNomeProduto" for="nomeProduto">Nome do Produto</label>
+            <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Digitar o nome">
+            <label class="descriçãoProduto" for="descricaoProduto">Descrição</label>
+            <input type="text" name="descricaoProduto" id="descricaoProduto" placeholder="Digitar a  Descrição">
+            <label class="selecaoCategoria" for="selecionarCategoria">Categorias</label>
+            <div id="selecionarCategoria" class="opcoesSelecionar">
+                <button class="botaoCategoria">Panificadora</button>
+                <button class="botaoCategoria">Frutas</button>
+                <button class="botaoCategoria">Bebidas</button>
+            </div>
+            <label class="valorDoProduto" for="">Valor do Produto</label>
+            <input type="number" name="valorProduto" id="valorProduto" placeholder="Digitar o valor aqui">
+            <label class="linkImgProduto" for="linkImagem">Link da Imagem</label>
+            <input type="url" name="linkImagem" id="linkImagem" placeholder="Inserir Link">
+            <div class="botaoDeDecisao">
+                <button id="botaoExcluirProduto" type="submit">Excluir</button>
+                <button id="botaoSalvarProduto" type="submit">Salvar alterações</button>
+            </div>
+        </form>
+        <script type="module" src="../script/admin.js"></script>
 </body>
+
 </html>
