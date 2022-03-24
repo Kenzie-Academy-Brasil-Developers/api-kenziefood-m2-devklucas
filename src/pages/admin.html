@@ -33,7 +33,7 @@
             <button class="adicionarproduto">Adicionar novo produto</button>
         </nav>
         <ul class='listadeProdutos'>
-           <li class="tituloListaProdutos">
+           <li class="tituloListaProdutos hidden">
                 <div class="tituloProduto">
                     <p>Produto</p>
                 </div>
@@ -50,27 +50,51 @@
         </ul>
         
     </main>
-    <div class="status ">
+    <div class="status hidden">
         <div class="cabecalhoStatus">
             <p> Status </p>
             <button> X </button>
         </div>
         <p class="informacaoStatus"> Produto adicionado com sucesso. </p>
     </div>
-    <div class="modalContainer">
+    <div class="modalContainer hidden">
         <div class="todosExcluir">
-            <div class="cabecalhoExcluir">
+            <div class="cabecalho">
                 <p>Exclusão de Produto</p>
                 <button>X</button>
             </div>
             <div class="textoExcluir">
-                <p>Tem certeza que deseja excluir esse produto?</p>
-                <div class="opcaoExcluir">
+                <h3>Tem certeza que deseja excluir esse produto?</h3>
+                <div class="opcoesSelecionar">
                     <button>Sim</button>
                     <button>Não</button>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="modalContainer hidden">
+        <div class="cabecalho modalCentralizado">
+            <h3 id="tituloFormulario">Cadastro de Produto</h3>
+            <button>X</button>
+        </div>
+        <form id="formularioEdicaoCadastro" class="formulario modalCentralizado">
+            <label for="nomeProduto">Nome do Produto</label>
+            <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Digitar o nome">
+            <label for="descricaoProduto">Descrição</label>
+            <input type="text" name="descricaoProduto" id="descricaoProduto" placeholder="Digitar a  Descrição">
+            <label for="selecionarCategoria">Categorias</label>
+            <div id="selecionarCategoria" class="opcoesSelecionar">
+                <button>Panificadora</button>
+                <button>Frutas</button>
+                <button>Bebidas</button>
+            </div>
+            <label for="">Valor do Produto</label>
+            <input type="number" name="valorProduto" id="valorProduto" placeholder="Digitar o valor aqui">
+            <label for="linkImagem">Link da Imagem</label>
+            <input type="url" name="linkImagem" id="linkImagem" placeholder="Inserir Link">
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+
     </div>
     <script type="module" src="../script/admin.js"></script>
 </body>
