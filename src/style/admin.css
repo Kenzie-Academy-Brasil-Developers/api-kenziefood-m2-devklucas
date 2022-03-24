@@ -373,6 +373,90 @@ nav{
     margin: 15px 20px 18px 28px;
 }
 
+.modalContainer{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.todosExcluir{
+    width: 496px;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+}
+
+.cabecalhoExcluir{
+    display: flex;
+    width: 496px;
+    height: 70px;
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.cabecalhoExcluir p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 25px 265px 25px 28px
+}
+
+.cabecalhoExcluir button{
+    width: 30px;
+    height: 30px;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #868E96;
+    background: #E9ECEF;
+    border-radius: 4px;
+    border: none;
+    margin: 20px 28px 20px 0;    
+}
+
+.textoExcluir{
+    width: 496px;
+    height: 213px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+}
+
+.textoExcluir p{
+    margin: 50px 60px 50px 60px;
+}
+
+.opcaoExcluir{
+    width: 496px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+}
+
+.opcaoExcluir button{
+    width: 150px;
+    height: 49px;
+    border: 1.5px solid #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 32px;
+    background: #F8F9FA;
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 375px) {
 
     html{
@@ -777,5 +861,100 @@ nav{
         font-size: 10px;
         line-height: 0px;
     }
+
+    .modalContainer{
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .modalContainerVisivel{
+        visibility: visible;
+    }
+
+    .todosExcluir{
+        width: 280px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 20%;
+        left: 10%;
+    }
+    
+    .cabecalhoExcluir{
+        display: flex;
+        width: 280px;
+        height: 40px;
+        background: #F8F9FA;
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    .cabecalhoExcluir p{
+        width: 180px;
+        height: 8px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 8px;
+        margin: 10px 55px 25px 15px;
+        padding: 5px;
+    }
+    
+    .cabecalhoExcluir button{
+        width: 18px;
+        height: 18px;
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+        color: #868E96;
+        background: #E9ECEF;
+        border-radius: 4px;
+        border: none;
+        margin: 10px 15px 25px 0;    
+    }
+    
+    .textoExcluir{
+        width: 280px;
+        height: 160px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 27px;
+        background-color: #FFFFFF;
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .textoExcluir p{
+        width: 260px;
+        margin: 30px 10px 20px 10px;
+    }
+    
+    .opcaoExcluir{
+        width: 280px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .opcaoExcluir button{
+        width: 60px;
+        height: 26px;
+        border: 1.5px solid #F8F9FA;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: #F8F9FA;
+        margin: 0 15px 0 15px;
+        font-size: 10px;
+    }
+    
 
 }
