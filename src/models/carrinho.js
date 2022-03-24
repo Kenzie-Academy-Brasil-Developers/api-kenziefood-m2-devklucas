@@ -23,13 +23,13 @@ export class Carrinho{
          // criação do html interno de cada objeto adicionado no carrinho
                 const itemCarrinho = document.createElement('li');
                 itemCarrinho.innerHTML = `
-                <img src="${produto.imagem}" alt="${produto.nome}">
+                <img class="containerImagemProdutoCarrinho" src="${produto.imagem}" alt="${produto.nome}">
                 <div class="detalhesProduto">
                     <h2 class ="infoProduto nomeProduto">${produto.nome}</h2>
                     <p class="infoProduto categoriaProduto">${produto.categoria}</p>
                     <span class="infoProduto precoProduto">${preco}</span>
                 </div>
-                <button class="excluirProduto" id="btnExcluir${produto.id}" class="btnCarrinho marginTopBottom10px">
+                <button class="btnRemoverCarrinho marginTopBottom10px" id="btnExcluir${produto.id}">
                     <i class="fa-solid fa-trash"></i>
                 </button>
                 `
