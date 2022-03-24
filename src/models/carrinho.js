@@ -33,6 +33,10 @@ export class Carrinho{
                     <i class="fa-solid fa-trash"></i>
                 </button>
                 `
+
+                const excluirProduto = itemCarrinho.querySelector(`#btnExcluir${produto.id}`)
+                excluirProduto.addEventListener('click', () => this.removerCarrinho(excluirProduto, produto.preco))
+
                 itemCarrinho.classList.add('produtoCarrinhoContainer')
                 listaCarrinho.appendChild(itemCarrinho)
                 console.log(produto)
@@ -42,24 +46,31 @@ export class Carrinho{
         this.atualizarInformacoes(true, precoProduto)
     }
 
-    static removerCarrinho() {
+    static removerCarrinho(botaoExcluir, preco) {
+        const produto = botaoExcluir.closest('li');
+        produto.remove()
 
+        this.atualizarInformacoes(false, preco)
     }
 
     static atualizarInformacoes(deveSomar, preco) {
+        const quantidade = document.querySelector('#qtdTotalCompra');
+        const total = document.querySelector('#precoTotalCompra');
+
         if (deveSomar) {
          //atualizando variaveis numericas
             this.precoTotal += preco
             this.quantidadeProdutos++
 
-         //atualizando valores na página
-            const quantidade = document.querySelector('#qtdTotalCompra');
-            quantidade.innerText = this.quantidadeProdutos;
-
-            const total = document.querySelector('#precoTotalCompra');
-            total.innerText = this.precoTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        
         } else {
+         //atualizando variaveis numericas
+            this.precoTotal -= preco
+            this.quantidadeProdutos--
 
         }
+        //atualizando valores na página
+        quantidade.innerText = this.quantidadeProdutos;
+        total.innerText = this.precoTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     }
 }
