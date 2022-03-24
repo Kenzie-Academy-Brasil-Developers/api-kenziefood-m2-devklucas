@@ -17,7 +17,7 @@
             <h2>Food</h2>
         </div>
         <div class="pesquisa">
-            <input type="text" placeholder="🔍 Pesquisar por produto">
+            <input type="text" placeholder=" Pesquisar por produto">
             <img src="../img/profileFix.png" alt="foto de perfil usaário">
         </div>
     </header>
@@ -33,7 +33,7 @@
             <button class="adicionarproduto">Adicionar novo produto</button>
         </nav>
         <ul class='listadeProdutos'>
-           <li class="tituloListaProdutos">
+            <li class="tituloListaProdutos hidden">
                 <div class="tituloProduto">
                     <p>Produto</p>
                 </div>
@@ -48,16 +48,79 @@
                 </div>
             </li>
         </ul>
-        
+
     </main>
-    <div class="status">
+    <div class="status hidden">
         <div class="cabecalhoStatus">
             <p> Status </p>
             <button> X </button>
         </div>
         <p class="informacaoStatus"> Produto adicionado com sucesso. </p>
     </div>
-    <script type="module" src="../script/admin.js"></script>
+    <div class="modalContainer ">
+        <div class="todosExcluir">
+            <div class="cabecalhoExclusaoProduto">
+                <p>Exclusão de Produto</p>
+                <button>X</button>
+            </div>
+            <div class="textoExcluir">
+                <h3 id="h3Excluir">Tem certeza que deseja excluir esse produto?</h3>
+                <div class="opcoesSelecionar">
+                    <button>Sim</button>
+                    <button>Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modalContainer hidden">
+        <div class="cabecalho modalCentralizado">
+            <h3 id="tituloFormulario">Cadastro de Produto</h3>
+            <button>X</button>
+        </div>
+        <form id="formularioEdicaoCadastro" class="formulario modalCentralizado">
+            <label class="tituloNomeProduto" for="nomeProduto">Nome do Produto</label>
+            <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Digitar o nome">
+            <label class="descriçãoProduto" for="descricaoProduto">Descrição</label>
+            <input type="text" name="descricaoProduto" id="descricaoProduto" placeholder="Digitar a  Descrição">
+            <label class="selecaoCategoria" for="selecionarCategoria">Categorias</label>
+            <div id="selecionarCategoria" class="opcoesSelecionar">
+                <button>Panificadora</button>
+                <button>Frutas</button>
+                <button>Bebidas</button>
+            </div>
+            <label class="valorDoProduto" for="">Valor do Produto</label>
+            <input type="number" name="valorProduto" id="valorProduto" placeholder="Digitar o valor aqui">
+            <label class="linkImgProduto" for="linkImagem">Link da Imagem</label>
+            <input type="url" name="linkImagem" id="linkImagem" placeholder="Inserir Link">
+            <button id="botaoCadastroProduto" type="submit">Cadastrar Produto</button>
+        </form>
+    </div>
+    <div class="modalContainer hidden ">
+        <div class="cabecalho modalCentralizado">
+            <h3 id="tituloFormulario">Edição de Produto</h3>
+            <button>X</button>
+        </div>
+        <form id="formularioEdicaoCadastro" class="formulario modalCentralizado">
+            <label class="tituloNomeProduto" for="nomeProduto">Nome do Produto</label>
+            <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Digitar o nome">
+            <label class="descriçãoProduto" for="descricaoProduto">Descrição</label>
+            <input type="text" name="descricaoProduto" id="descricaoProduto" placeholder="Digitar a  Descrição">
+            <label class="selecaoCategoria" for="selecionarCategoria">Categorias</label>
+            <div id="selecionarCategoria" class="opcoesSelecionar">
+                <button class="botaoCategoria">Panificadora</button>
+                <button class="botaoCategoria">Frutas</button>
+                <button class="botaoCategoria">Bebidas</button>
+            </div>
+            <label class="valorDoProduto" for="">Valor do Produto</label>
+            <input type="number" name="valorProduto" id="valorProduto" placeholder="Digitar o valor aqui">
+            <label class="linkImgProduto" for="linkImagem">Link da Imagem</label>
+            <input type="url" name="linkImagem" id="linkImagem" placeholder="Inserir Link">
+            <div class="botaoDeDecisao">
+                <button id="botaoExcluirProduto" type="submit">Excluir</button>
+                <button id="botaoSalvarProduto" type="submit">Salvar alterações</button>
+            </div>
+        </form>
+        <script type="module" src="../script/admin.js"></script>
 </body>
 
 </html>

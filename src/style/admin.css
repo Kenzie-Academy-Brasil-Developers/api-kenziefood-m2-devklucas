@@ -79,6 +79,11 @@ h2{
     margin-right: 34px; 
     margin-top: 11px;
     margin-bottom: 11px;
+    padding-left: 35px;
+    background: url("../img/magnifying-glass-solid.svg") no-repeat #E9ECEF;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-size: 15px;
 }
 
 nav{
@@ -231,7 +236,11 @@ nav{
     font-size: 14px;
     line-height: 20px;
 }
-
+.nomeProdutoImg{
+    width:33px;
+    height:32px;
+    border-radius: 180px;
+}
 
 .categoriaProduto{
     width: 430px;
@@ -310,7 +319,6 @@ nav{
 }
 
 .status{
-    visibility: hidden;
     width: 496px;
     height: 135px;
     margin-left: 1090px;
@@ -374,37 +382,378 @@ nav{
     margin: 15px 20px 18px 28px;
 }
 
+.modalContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.todosExcluir{
+    width: 496px;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+}
+.cabecalhoExclusaoProduto{
+    display: flex;
+    width: 496px;
+    height: 70px;
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+
+}
+.cabecalhoExclusaoProduto p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin: 25px 265px 25px 28px;
+}
+
+.cabecalhoExclusaoProduto button{
+    width: 30px;
+    height: 30px;
+    background: #E9ECEF;
+    border-radius: 4px;
+    color: #868E96;
+    border: none;
+    margin: 25px 25px 25px 0;
+}
+
+
+
+
+.cabecalho{
+    background: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    width: 496px;
+    height: 70px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.cabecalho h3{
+    width: 250px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 25px 265px 25px 28px
+}
+
+.cabecalho button{
+    width: 30px;
+    height: 30px;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #868E96;
+    background: #E9ECEF;
+    border-radius: 4px;
+    border: none;
+    margin: 20px 28px 20px 0;    
+}
+
+.textoExcluir{
+    width: 496px;
+    height: 213px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+}
+
+#h3Excluir{
+    width: 400px;
+    height: 50px;
+    margin: 50px 60px 50px 60px;
+}
+
+#formularioEdicaoCadastro{
+    width: 496px;
+    height: 685px;
+}
+.tituloNomeProduto{
+    align-items: center;
+    width: 150px;
+    height: 20px;
+    color: #212529;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    margin: 25px 350px 0px 30px;
+}
+
+#nomeProduto{
+    width: 440px;
+    height: 52px;
+    background: #F8F9FA;
+    border: 1.5px solid #DEE2E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16;
+    color: #868E96;
+    padding: 15px;
+    margin: 10px 28px 40px 28px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+.descriçãoProduto {
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0px;
+    color: #212529;
+    margin-left: 28px;
+    margin-bottom: 10px;
+}
+
+#descricaoProduto{
+    background: #F8F9FA;
+    width: 440px;
+    height: 52px;
+    border: 1.5px solid #DEE2E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0px 28px 40px 28px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.selecaoCategoria{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0px;
+    color: #212529;
+    margin-left: 28px;
+    margin-bottom: 5px;
+    
+}
+
+#selecionarCategoria{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.textoExcluir p{
+    margin: 50px 60px 50px 60px;
+}
+
+.opcoesSelecionar{
+    margin-top: 0;
+    width: 496px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+}
+.botaoCategoria:hover{
+    background: #FF2253;
+    color: white;
+}
+
+#tituloFormulario{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.opcoesSelecionar button{
+    width: 150px;
+    height: 40px;
+    border: 1.5px solid #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 32px;
+    background: #F8F9FA;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.valorDoProduto{
+    width: 150px;
+    height: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #212529;
+    margin-left: 28px;
+}
+#valorProduto{
+    width: 440px;
+    height: 52px;
+    border: 1.5px solid #DEE2E6;
+    background: #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 16px 28px 40px 28px;
+    padding: 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+#linkImagem{
+    width: 440px;
+    height: 52px;
+    border: 1.5px solid #DEE2E6;
+    background: #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 16px 28px 40px 28px;
+    padding: 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.linkImgProduto{
+    width: 150px;
+    height: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #212529;
+    margin-left: 28px;
+    
+}
+
+#botaoCadastroProduto{
+    width: 440px;
+    height: 52px;
+    padding: 15px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1.5px solid #FF2253;
+    box-sizing: border-box;
+    border-radius: 32px;
+    background: #FF2253;
+    color: white;
+    margin: 10px 28px 30px 28px;
+}
+
+.botaoDeDecisao{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#botaoExcluirProduto{
+    width: 80px;
+    height: 50px;
+    background: #F8F9FA;
+    color: #868E96;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 50px;
+    border: 1.5px solid #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 32px;
+    margin: 0 8px 0 28px;
+    
+}
+
+#botaoSalvarProduto{
+    width: 240px;
+    height: 50px;
+    background: #FF2253;
+    border: 1.5px solid #FF2253;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F8F9FA;
+    margin: 0 28px 0 8px;
+}
+.modalCentralizado {
+    margin: auto;
+}
+
+.formulario {
+    display:flex;
+    flex-direction:column;
+    width: 496px;
+    height: 360px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+}
+
+.hidden {   
+    visibility: hidden;
+}
 
 @media screen and (max-width: 375px) {
 
     html{
         display: flex;
         justify-content: center;
-        height: auto;
     }
     
-    body{        
-        width: 100%;
-        height: auto;
+    body{
         display: flex;
         justify-content: center;
-        flex-direction: column;        
+        flex-direction: column;
     }
-
+    
     main{
         margin-bottom: 20px;
     }
-
+    
     .kenzieFood{
         display: flex;
-        align-items: center; 
-        margin-left: 10px;
+        align-items: center;
+        margin-left: 117px;  
     }
     
     header{
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 1600px;
         height: 72px;    
     }
     
@@ -412,7 +761,7 @@ nav{
         font-family: 'Poppins', sans-serif;
         color:#212529;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 21px;
         line-height: 33px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -423,184 +772,171 @@ nav{
         font-weight: 700;
         color:#212529;
         line-height: 24px;
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 5px;
         color: #FF2253;
         margin-top: 28px;
-        margin-bottom: 28px;
+        margin-bottom: 24px;
     }
     
     .pesquisa{
-        width: 200px;
+        width: 348px;
         display: flex;
         justify-content: space-evenly;
-        margin-right: 10px;
+        margin-right: 118px;
     }
     
     .pesquisa img{
-        width: 25px;
-        height: 25px;
-        margin: auto;
+        width: 36px;
+        height: 36px;
+        margin-top: 18px;
+        margin-bottom: 18px;
     }
     
     .pesquisa input{
-        width: 150px;
-        height: 25px;
+        width: 312px;
+        height: 49px;
         background-color:  #E9ECEF;
         border: 1.5px solid #E9ECEF;
         box-sizing: border-box;
         border-radius: 12px;
-        padding: 5px 8px 5px 8px;  
-        margin: auto;
-        font-size: 10px;
+        padding: 15px 18px 15px 16px;  
+        margin-right: 34px; 
+        margin-top: 11px;
+        margin-bottom: 11px;
+        padding-left: 35px;
+        background: url("../img/magnifying-glass-solid.svg") no-repeat #E9ECEF;
+        background-position-x: 10px;
+        background-position-y: center;
+        background-size: 15px;
     }
     
     nav{
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        height: 25px;
+        width: 1600px;
+        height: 48px;
         margin-top: 44px;
-        font-family: 'Inter', sans-serif; 
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;    
+        
     }
     
     .adicionarproduto{
-        width: 130px;
-        height: 25px;
+        width:  217px;
+        height: 48px;
         margin-right: 115px;
         background: #FF2253;
         border: 1.5px solid #FF2253;
         color: white;
         box-sizing: border-box;
-        border-radius: 32px;       
-        font-size: 9px;        
-        padding: 0 5px; 
-        margin-right: 5px; 
-        margin-left: 10px;
+        border-radius: 32px;
     }
     
     .categoria{
         display: flex;
         justify-content: space-between;
-        height: 25px;
-        margin-left: 5px;
+        width: 600px;
+        height: 49px;
+        margin-left: 118px;
     }
     
     .todos{
-        width: 40px;
-        height: 25px;
+        width: 88px;
+        height: 48px;
         background-color: #FF2253;
         border: 1.5px solid #FF2253;
         color: white;
         box-sizing: border-box;
         border-radius: 32px;
-        padding: 0 5px;     
-        font-size: 9px; 
+        padding: 15px 20px;
     }
     
     .panificadora{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90px;
-        height: 25px;
-        padding: 0 5px;  
+        width: 170px;
+        height: 49px;
+        padding: 15px 20px;
         border: 1.5px solid #FFF7F4;
         background: #FFF7F4;
         box-sizing: border-box;
-        border-radius: 32px;     
-        font-size: 9px; 
+        border-radius: 32px;
     }
     
     .panificadora img{
-        width: 15px;
-        height: 15px;
-        margin-right: 5px;
+        margin-right: 15px;
     }
     
     .frutas{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 25px;
+        width: 123px;
+        height: 48px;
         border: 1.5px solid #FFF1F4;
         background-color: #FFF1F4;
         box-sizing: border-box;
         border-radius: 32px;
-        padding: 0 5px;       
-        font-size: 9px; 
+        padding: 15px 20px;
     }
     
     .frutas img{
-        width: 15px;
-        height: 15px;
-        margin-right: 5px;
+        margin-right: 15px;
     }
     
     .bebidas{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 25px;
-        padding: 0 5px;   
+        width: 136px;
+        height: 48px;
+        padding: 15px 20px;
         border: 1.5px solid #F3EEF5;
         background: #F3EEF5;
         box-sizing: border-box;
-        border-radius: 32px;     
-        font-size: 9px; 
+        border-radius: 32px;
     }
     
     .bebidas img{
-        width: 15px;
-        height: 15px;
-        margin-right: 5px;
+        margin-right: 15px;
     }
     
     .listadeProdutos{
-        width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 57px;
     }
     
     .tituloListaProdutos{
-        visibility: hidden;
-        width: 100%;
+        width: 1600px;
         display: flex;
-        margin-top: 15px;
-        margin-bottom: 11px;  
+        margin-top: 54px;
+        margin-bottom: 31px;   
     }
     
     .tituloListaProdutos p{
         color: #868E96;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         font-family: 'Poppins', sans-serif;
     }
     
     .tituloProduto{
-        margin: 0 0 0 10px;
+        margin: 0 0 0 136px;
     }
     
     .tituloCategoria{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 277px;
     }
     
     .tituloDescricao{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 381px;
     }
     
     .tituloAcoes{
-        margin: 0 0 0 20px;
+        margin: 0 178px 0 382px;
     }
     
     .cartaoProdutos{    
-        width: 300px;
-        height: 220px;
+        width: 1370px;
+        height: 62px;
         display: flex;
-        flex-direction: column;
         margin: auto;   
         margin-bottom: 20px;
         border: 1px solid #E9ECEF;
@@ -610,97 +946,92 @@ nav{
     }
     
     .nomeProduto{
-        width: 300px;
+        width: 310px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin: 0 auto;
-        margin-bottom: 8px;
+        margin-left: 20px;
     }
-
-    .nomeProduto img{
-        width: 60px;
-        margin-bottom: 8px;        
-        margin-top: 8px;
-    }
-
+    
     .nomeProduto p{ 
         margin-left: 24px;   
         color: #212529;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
-        margin-bottom: 8px;
+    }
+    .nomeProdutoImg{
+        width:33px;
+        height:32px;
+        border-radius: 180px;
     }
     
     .categoriaProduto{
-        width: 300px;
+        width: 430px;
+        margin-left: 22px;
         display: flex;
-        margin: 0 auto;
-        margin-bottom: 8px;
     }
     
     .categoriaProduto span{ 
         width: 430px;   
         height: 27px;
         display: flex;
-        margin: 0 auto;        
+        margin: auto;
     }
     
     .categoriaProduto span p{
-        width:  55px;
-        height: 20px;
+        width:  93px;
+        height: 27px;
         text-align: center;
         background-color: #F8F9FA;
         color: #868E96;    
         border-radius: 8px;
-        line-height: 20px;    
-        margin: auto 5px;
+        line-height: 25px;    
+        margin: 0 9px 0 0;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 8px;
-        
+        font-size: 14px;
     }
     
     .categoriaDescricao{ 
-        width: 300px;   
+        width: 432px;   
+        margin-left: 20px;
         display: flex;
-        margin: 0 auto;
-        margin-bottom: 8px;
     }
     
     .categoriaDescricao span{
-        width: 284px;
-        margin: auto 0; 
-        margin-left: 8px;
+        margin: auto;
+        margin-left: 0;
+    }
+    
+    .categoriaDescricao span{ 
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 24px;
         color: #868E96;
     }
     
     .categoriaAcoes{
-        width: 300px;   
+        width: 91px;   
+        margin-left: 20px;
+        margin-right: 12px;
         display: flex;
-        justify-content: center;
-        margin: 0 auto;
         
     }
     .categoriaAcoes span{
-        width: 60px; 
+        width: 91px; 
         display: flex;
         justify-content: space-between;
-        margin: 0;
+        margin: auto;
     }
     
-    .categoriaAcoes button{             
-        width: 25px;
-        height: 25px;
+    .categoriaAcoes button{    
+        width: 38px;
+        height: 38px;
         border: none;
         background: none;
         padding: 0;
@@ -708,57 +1039,61 @@ nav{
         display: flex;
     }
     
-    .categoriaAcoes button img{            
-        width: 25px;
-        height: 25px;
+    .categoriaAcoes button img{
         margin: auto;
     }
     
-    .status{    
-        visibility: hidden;
-        width: 300px;
-        height: 100px;
-        margin-left: 30px;
+    .status{
+        width: 496px;
+        height: 135px;
+        margin-left: 1090px;
         display: flex;    
-        flex-direction: column;
-        border-radius: 8px;
-        margin-bottom: 30px;
-        position: fixed;
-        top: 50%;
+        flex-direction: column;   
+        border-radius: 8px;   
+        background-color: #FFFFFF;
     }
     
     .statusPositivo{
         visibility: visible;
-        border-radius: 8px;
         border-bottom: solid 8px #39DF8F;
+        background-color: #FFFFFF;
     }
     
     .statusNegativo{ 
-        visibility: visible;        
-        border-radius: 8px;
+        visibility: visible;
         border-bottom: solid 8px #FF2253;
+        background-color: #FFFFFF;
     }
     
     .cabecalhoStatus{
-        width: 300px;
-        height: 30px;
+        width: 496px;
+        height: 70px;       
+        border-radius: 8px;
         background-color: #F8F9FA;
-        display: flex;
+        display: flex;    
         justify-content: space-between;
-    }  
+    }
+    
+    .cabecalhoStatus p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 25px 364px 25px 28px;
+    }
     
     .cabecalhoStatus button{
-        width: 20px;
-        height: 20px;    
-        margin: auto;
-        margin-right: 20px;
+        width: 30px;
+        height: 30px;    
+        margin: 20px 28px 20px auto;
         background: #E9ECEF;
         color: #868E96;
         border-radius: 4px;
         border: none;
         font-family: 'Nunito';
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;    
     }
     
@@ -766,18 +1101,356 @@ nav{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 24px;
         color: #212529;
         margin: 15px 20px 18px 28px;
     }
-
-    .cabecalhoStatus p{
+    
+    .modalContainer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .todosExcluir{
+        width: 120px;
+        height: 103px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 20%;
+        left: 35%;
+    }
+    .cabecalhoExclusaoProduto{
+        display: flex;
+        width: 220px;
+        height: 70px;
+        background: #F8F9FA;
+        border-radius: 8px 8px 0px 0px;
+    
+    }
+    .cabecalhoExclusaoProduto p{
+        width: 180px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        color: #000000;
+        margin: 25px 0px 25px 28px;
+    }
+    
+    .cabecalhoExclusaoProduto button{
+        width: 15px;
+        height: 15px;
+        background: #E9ECEF;
+        border-radius: 4px;
+        color: #868E96;
+        border: none;
+        margin: 25px 25px 25px 30px;
+    }
+    
+    
+    
+    
+    .cabecalho{
+        background: #F8F9FA;
+        display: flex;
+        justify-content: center;
+        width: 496px;
+        height: 70px;
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    .cabecalho h3{
+        width: 250px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 10px;
-        line-height: 0px;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 25px 265px 25px 28px
     }
-
-}
+    
+    .cabecalho button{
+        width: 30px;
+        height: 30px;
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #868E96;
+        background: #E9ECEF;
+        border-radius: 4px;
+        border: none;
+        margin: 20px 28px 20px 0;    
+    }
+    
+    .textoExcluir{
+        width: 220px;
+        height: 213px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 27px;
+        background-color: #FFFFFF;
+        border-radius: 0 0 8px 8px;
+    }
+    
+    #h3Excluir{
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin: 50px 20px 50px 20px;
+    }
+    
+    #formularioEdicaoCadastro{
+        width: 496px;
+        height: 685px;
+    }
+    .tituloNomeProduto{
+        align-items: center;
+        width: 150px;
+        height: 20px;
+        color: #212529;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        margin: 25px 350px 0px 30px;
+    }
+    
+    #nomeProduto{
+        width: 440px;
+        height: 52px;
+        background: #F8F9FA;
+        border: 1.5px solid #DEE2E6;
+        box-sizing: border-box;
+        border-radius: 12px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16;
+        color: #868E96;
+        padding: 15px;
+        margin: 10px 28px 40px 28px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .descriçãoProduto {
+        align-items: center;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 0px;
+        color: #212529;
+        margin-left: 28px;
+        margin-bottom: 10px;
+    }
+    
+    #descricaoProduto{
+        background: #F8F9FA;
+        width: 440px;
+        height: 52px;
+        border: 1.5px solid #DEE2E6;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 15px;
+        margin: 0px 28px 40px 28px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .selecaoCategoria{
+        width: 100px;
+        height: 30px;
+        padding: 5px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 0px;
+        color: #212529;
+        margin-left: 28px;
+        margin-bottom: 5px;
+        
+    }
+    
+    #selecionarCategoria{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    
+    .textoExcluir p{
+        margin: auto;
+    }
+    
+    .opcoesSelecionar{
+        margin-top: 0;
+        width: 220px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 38px;
+    }
+    .botaoCategoria:hover{
+        background: #FF2253;
+        color: white;
+    }
+    
+    #tituloFormulario{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 10px;
+    }
+    
+    .opcoesSelecionar button{
+        width: 80px;
+        height: 20px;
+        border: 1.5px solid #F8F9FA;
+        box-sizing: border-box;
+        border-radius: 32px;
+        background: #F8F9FA;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 17px;
+        
+    }
+    
+    .valorDoProduto{
+        width: 150px;
+        height: 20px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #212529;
+        margin-left: 28px;
+    }
+    #valorProduto{
+        width: 440px;
+        height: 52px;
+        border: 1.5px solid #DEE2E6;
+        background: #F8F9FA;
+        box-sizing: border-box;
+        border-radius: 12px;
+        margin: 16px 28px 40px 28px;
+        padding: 15px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+    }
+    #linkImagem{
+        width: 440px;
+        height: 52px;
+        border: 1.5px solid #DEE2E6;
+        background: #F8F9FA;
+        box-sizing: border-box;
+        border-radius: 12px;
+        margin: 16px 28px 40px 28px;
+        padding: 15px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .linkImgProduto{
+        width: 150px;
+        height: 20px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #212529;
+        margin-left: 28px;
+        
+    }
+    
+    #botaoCadastroProduto{
+        width: 440px;
+        height: 52px;
+        padding: 15px;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        border: 1.5px solid #FF2253;
+        box-sizing: border-box;
+        border-radius: 32px;
+        background: #FF2253;
+        color: white;
+        margin: 10px 28px 30px 28px;
+    }
+    
+    .botaoDeDecisao{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    #botaoExcluirProduto{
+        width: 80px;
+        height: 50px;
+        background: #F8F9FA;
+        color: #868E96;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 50px;
+        border: 1.5px solid #F8F9FA;
+        box-sizing: border-box;
+        border-radius: 32px;
+        margin: 0 8px 0 28px;
+        
+    }
+    
+    #botaoSalvarProduto{
+        width: 240px;
+        height: 50px;
+        background: #FF2253;
+        border: 1.5px solid #FF2253;
+        box-sizing: border-box;
+        border-radius: 32px;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F8F9FA;
+        margin: 0 28px 0 8px;
+    }
+    .modalCentralizado {
+        margin: auto;
+    }
+    
+    .formulario {
+        display:flex;
+        flex-direction:column;
+        width: 496px;
+        height: 360px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        background-color: #FFFFFF;
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .hidden {   
+        visibility: hidden;
+    }
+}    
