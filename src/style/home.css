@@ -67,6 +67,10 @@ nav{
     margin-right: 15px;
 }
 
+.iconMargin4x{
+    margin: 15px;
+}
+
 /* || Buttons */
 
 .btnlogin{
@@ -255,6 +259,18 @@ main{
     .containerHeaderCarrinho{
         position: absolute;
         top: 0;
+    }
+
+    .containerProdutosCarrinho{
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
     }
 
     .containerVitrine{

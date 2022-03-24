@@ -1,6 +1,6 @@
 import { Api } from '../api/Api.js'
-import { VitrineProdutos } from '../models/vitrine-produtos.js'
-import { Carrinho } from '../models/carrinho.js'
+import { VitrineProdutos } from '../models/Vitrine-produtos.js'
+import { Carrinho } from '../models/Carrinho.js'
 
 /*
 const vitrinePrincipal = document.querySelector(".containerVitrine")
