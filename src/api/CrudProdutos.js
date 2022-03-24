@@ -1,9 +1,13 @@
 import { TemplateAdmin } from "../models/template-admin.js"
 
 export class CrudProdutos{
-    static ROTA = 'https://kenzie-food-api.herokuapp.com'
 
-    static async pegarMeusProdutos(token){
+    static ROTA = 'https://kenzie-food-api.herokuapp.com'
+    
+    static MeusProdutos = []
+    
+    static async pegarMeusProdutos(){
+        const token = await JSON.parse(localStorage.getItem('token'))
     
         const resposta = await fetch(`${this.ROTA}/my/products`,{
               headers : 
@@ -11,12 +15,12 @@ export class CrudProdutos{
             
          })
          const dadosResposta = await resposta.json()
+         await TemplateAdmin.mostrarProdutos(dadosResposta)
        
-        return TemplateAdmin.mostrarProdutos(dadosResposta) //Retorna um array de produtos com usuário autenticado 
+        return this.MeusProdutos = dadosResposta //Retorna um array de produtos com usuário autenticado 
     }
     
     static async adicionarMeusProdutos(token,data){
-        
         const resposta = await fetch(`${this.ROTA}/my/products`,{
             method : "POST",
             headers : {

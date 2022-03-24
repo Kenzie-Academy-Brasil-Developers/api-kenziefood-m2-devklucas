@@ -1,6 +1,10 @@
 export class TemplateAdmin{
     static mostrarProdutos(data){
         const container = document.querySelector('.listadeProdutos')
+        
+        const li = document.querySelectorAll('.cartaoProdutos')    
+        li.forEach(item => item.remove())
+    
         for(let i = 0 ; i<data.length;i++){
             const li = document.createElement('li')
             li.classList.add('cartaoProdutos')
