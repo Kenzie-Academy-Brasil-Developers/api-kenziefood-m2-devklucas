@@ -2,11 +2,6 @@ import { Api } from '../api/Api.js'
 import { VitrineProdutos } from '../models/Vitrine-produtos.js'
 import { Carrinho } from '../models/Carrinho.js'
 
-/*
-const vitrinePrincipal = document.querySelector(".containerVitrine")
-const vitrineCarrinho = document.querySelector(".containerCarrinho")
-*/
-
 const arrayProdutos = await Api.requestProdutos()
 
 VitrineProdutos.listarProdutos(arrayProdutos)
@@ -26,3 +21,29 @@ btnBebidas.addEventListener('click', () => VitrineProdutos.filtrarProdutos(array
 const inputBusca = document.getElementById('inputPesquisarProduto')
 
 inputBusca.addEventListener('keyup', () => VitrineProdutos.buscarProdutos())
+
+const containerProdutos = document.querySelector('.containerCarrinho')
+//criando container para a lista de produtos
+const listaCarrinho = document.createElement('ul');
+listaCarrinho.classList.add('listaProdutosCarrinho');
+containerProdutos.appendChild(listaCarrinho)
+
+//criando barra de dados sobre a compra
+const containerDadosCarrinho = document.createElement('div');
+containerDadosCarrinho.classList.add('containerDadosCarrinho')
+containerDadosCarrinho.classList.add('hidden')
+containerDadosCarrinho.innerHTML = `
+    <div class="containerQuantidadeCarrinho">
+        <span>Quantidade</span>
+        <span id="qtdTotalCompra">0</span>
+    </div>
+    <div class="containerTotalCarrinho">
+        <span>Total</span>
+        <span id="precoTotalCompra">R$ 0,00</span>
+    </div>
+`
+containerProdutos.appendChild(containerDadosCarrinho)
+
+const modalCarrinho = document.getElementById('containerCarrinho')
+modalCarrinho.addEventListener('click', () => Carrinho.mostrarModal())
+
