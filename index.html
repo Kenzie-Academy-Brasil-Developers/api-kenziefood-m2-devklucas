@@ -22,7 +22,7 @@
             </div>
             <div class="containerPesquisarLogar">
                 <form action="" class="formPesquisarProduto">
-                    <input type="text" class="inputPesquisarProduto" placeholder="Pesquisar por Produto"> 
+                    <input id='inputPesquisarProduto' type="text" class="inputPesquisarProduto" placeholder="Pesquisar por Produto"> 
                 </form>
                 <button class="btnPrincipal btnlogin" onclick="window.location.href='./src/pages/login.html';">
                     <i class="fa-solid fa-user iconMargin"></i>
@@ -54,7 +54,7 @@
         </section>
 
         <section class="containerVitrine">
-            <ul class="listaProdutos">
+            <ul id="listaProdutos" class="listaProdutos">
 
             </ul>
             <aside>
@@ -63,10 +63,15 @@
                         <i class="fa-solid fa-cart-plus iconMargin"></i>
                         Carrinho
                     </div>
-                    <!-- 
-                    <div class="containerQuantidadeCarrinho"></div>
-                    <div class="containerTotalCarrinho"></div>
-                    -->
+                    <div class="containerProdutosCarrinho">
+                        <img class="iconMargin4x" src="./src/img/shopping-bag.svg" alt="sacola">    
+                        <p class="pCarrinho">Por enquanto não temos produtos no carrinho</p>
+
+                    </div>
+
+                    <div hidden class="containerQuantidadeCarrinho"></div>
+                    <div hidden class="containerTotalCarrinho"></div>
+
         
                 </section>
             </aside>

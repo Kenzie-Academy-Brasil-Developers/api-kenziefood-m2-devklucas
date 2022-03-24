@@ -1,5 +1,11 @@
 import { Api } from '../api/Api.js'
-import { VitrineProdutos } from '../models/vitrine-produtos.js'
+import { VitrineProdutos } from '../models/Vitrine-produtos.js'
+import { Carrinho } from '../models/Carrinho.js'
+
+/*
+const vitrinePrincipal = document.querySelector(".containerVitrine")
+const vitrineCarrinho = document.querySelector(".containerCarrinho")
+*/
 
 const arrayProdutos = await Api.requestProdutos()
 
@@ -16,3 +22,7 @@ btnTodos.addEventListener('click', () => VitrineProdutos.listarProdutos(arrayPro
 btnPanificadora.addEventListener('click', () => VitrineProdutos.filtrarProdutos(arrayProdutos,"Panificadora"))
 btnFrutas.addEventListener('click', () => VitrineProdutos.filtrarProdutos(arrayProdutos,'Frutas'))
 btnBebidas.addEventListener('click', () => VitrineProdutos.filtrarProdutos(arrayProdutos,'Bebidas'))
+
+const inputBusca = document.getElementById('inputPesquisarProduto')
+
+inputBusca.addEventListener('keyup', () => VitrineProdutos.buscarProdutos())

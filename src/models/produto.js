@@ -1,4 +1,4 @@
-const Produto = class Produto{
+class Produto{
     constructor(id,nome,preco,categoria,descricao,imagem,createdAt,updatedAt){
         this._id = id
         this._nome = nome

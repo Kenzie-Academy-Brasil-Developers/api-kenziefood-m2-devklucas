@@ -1,4 +1,4 @@
-const VitrineProdutos = class VitrineProdutos {
+class VitrineProdutos {
 
     static listarProdutos(arrayProdutos){
         const vitrinePrincipal = document.querySelector(".listaProdutos")
@@ -43,6 +43,28 @@ const VitrineProdutos = class VitrineProdutos {
           })
           
           this.listarProdutos(arrayFiltrado)
+        }
+
+        static buscarProdutos(){
+          let input, filter, ul, li, a, txtValue;
+
+          input = document.getElementById("inputPesquisarProduto")
+          filter = input.value.toUpperCase()
+          ul = document.getElementById("listaProdutos")
+          li = ul.getElementsByTagName("li")
+
+          for (let i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("h1")[0]
+
+              txtValue = a.textContent || a.innerText
+
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = ""
+              } else {
+                  li[i].style.display = "none"
+              }
+          }
+
         }
 }
 
