@@ -1,4 +1,4 @@
-const VitrineProdutos = class VitrineProdutos {
+class VitrineProdutos {
 
     static listarProdutos(arrayProdutos){
         const vitrinePrincipal = document.querySelector(".listaProdutos")
@@ -46,7 +46,6 @@ const VitrineProdutos = class VitrineProdutos {
         }
 
         static buscarProdutos(){
-          console.log('entrou na busca')
           let input, filter, ul, li, a, txtValue;
 
           input = document.getElementById("inputPesquisarProduto")
@@ -58,7 +57,7 @@ const VitrineProdutos = class VitrineProdutos {
             a = li[i].getElementsByTagName("h1")[0]
 
               txtValue = a.textContent || a.innerText
-              
+
               if (txtValue.toUpperCase().indexOf(filter) > -1) {
                   li[i].style.display = ""
               } else {

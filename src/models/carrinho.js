@@ -1,4 +1,4 @@
-const Carrinho = class Carrinho {
+class Carrinho {
 
     static adicionarProdutoCarrinho(arrayProdutos,idProduto){
         let produtos = []
