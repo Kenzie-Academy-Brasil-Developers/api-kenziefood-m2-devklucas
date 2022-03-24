@@ -79,6 +79,11 @@ h2{
     margin-right: 34px; 
     margin-top: 11px;
     margin-bottom: 11px;
+    padding-left: 35px;
+    background: url("../img/magnifying-glass-solid.svg") no-repeat #E9ECEF;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-size: 15px;
 }
 
 nav{
