@@ -1,4 +1,4 @@
-import { Carrinho } from "./Carrinho.js"
+import { Carrinho } from "./carrinho.js"
 
 export class VitrineProdutos {
 
