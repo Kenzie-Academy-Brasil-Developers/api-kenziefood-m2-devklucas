@@ -149,9 +149,6 @@ main{
 
     background: #FF2253;
     border-radius: 8px 8px 0px 0px;
-
-    position:fixed;
-	bottom:0;
 }
 
 .listaProdutosCarrinho {
