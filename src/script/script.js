@@ -29,11 +29,11 @@ const containerDadosCarrinho = document.createElement('div');
 containerDadosCarrinho.classList.add('containerDadosCarrinho')
 containerDadosCarrinho.classList.add('hidden')
 containerDadosCarrinho.innerHTML = `
-    <div class="dadoCarrinho">
+    <div class="dadoCarrinho containerQuantidadeCarrinho">
         <span>Quantidade</span>
         <span id="qtdTotalCompra">0</span>
     </div>
-    <div class="dadoCarrinho">
+    <div class="dadoCarrinho containerTotalCarrinho">
         <span>Total</span>
         <span id="precoTotalCompra">R$ 0,00</span>
     </div>

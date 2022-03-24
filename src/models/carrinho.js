@@ -12,7 +12,6 @@ export class Carrinho{
     }
 
     static adicionarCarrinho(arrayProdutos, id) {
-        const containerProdutos = document.querySelector('.containerCarrinho')
         const listaCarrinho = document.querySelector('.listaProdutosCarrinho');
         let precoProduto;
 

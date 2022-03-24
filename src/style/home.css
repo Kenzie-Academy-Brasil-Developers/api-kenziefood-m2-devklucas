@@ -120,6 +120,10 @@ main{
 
 /* || Carrinho */
 
+aside {
+    z-index: 0;
+}
+
 .containerCarrinho{
     width: 320px;
     height: 583px;
@@ -129,7 +133,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .containerHeaderCarrinho{
@@ -149,6 +153,13 @@ main{
 	bottom:0;
 }
 
+.listaProdutosCarrinho {
+    overflow-y: auto;
+
+    height: 100%;
+    width: 100%;
+}
+
 .containerQuantidadeCarrinho{
     height: 58px;
 
@@ -161,9 +172,10 @@ main{
     background-color: #FFFFFF;
 }
 
-.containerCardProdutoCarrinho{
+.produtoCarrinhoContainer{
     width: 300px;
     height: 84px;
+    display: flex;
 }
 
 .containerImagemProdutoCarrinho{
@@ -253,8 +265,8 @@ main{
     }
 
     .containerHeaderCarrinho{
-        position: absolute;
-        top: 0;
+        position: absolute;    
+        top: -56px;
     }
 
     .containerVitrine{
