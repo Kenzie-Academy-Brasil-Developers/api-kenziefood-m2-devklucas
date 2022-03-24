@@ -1,5 +1,6 @@
 import { Api } from '../api/Api.js'
-import { VitrineProdutos } from '../models/vitrine-produtos.js'
+import { VitrineProdutos } from '../models/Vitrine-produtos.js'
+import { Carrinho } from '../models/Carrinho.js'
 
 const arrayProdutos = await Api.requestProdutos()
 
@@ -17,7 +18,7 @@ btnPanificadora.addEventListener('click', () => VitrineProdutos.filtrarProdutos(
 btnFrutas.addEventListener('click', () => VitrineProdutos.filtrarProdutos(arrayProdutos,'Frutas'))
 btnBebidas.addEventListener('click', () => VitrineProdutos.filtrarProdutos(arrayProdutos,'Bebidas'))
 
-console.log(arrayProdutos)
+
 const containerProdutos = document.querySelector('.containerCarrinho')
 //criando container para a lista de produtos
 const listaCarrinho = document.createElement('ul');
@@ -39,3 +40,12 @@ containerDadosCarrinho.innerHTML = `
     </div>
 `
 containerProdutos.appendChild(containerDadosCarrinho)
+
+const modalCarrinho = document.getElementById('containerCarrinho')
+modalCarrinho.addEventListener('click', () => Carrinho.mostrarModal())
+
+/*
+const carrinho = document.getElementById('qtdTotalCompra');
+carrinho.addEventListener('change',() => Carrinho.verificaConteudoCarrinho())
+
+*/

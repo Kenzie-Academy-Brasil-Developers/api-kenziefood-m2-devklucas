@@ -72,4 +72,16 @@ export class Carrinho{
         quantidade.innerText = this.quantidadeProdutos;
         total.innerText = this.precoTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     }
+
+    static mostrarModal(){
+        const modal = document.getElementById("containerCarrinho");
+        console.log(modal.style.bottom)
+        if(modal.style.bottom == '0px'){
+            modal.style.bottom = '-538px';
+        }
+        else{
+            modal.style.bottom = 0         
+        }
+    }
+    
 }
