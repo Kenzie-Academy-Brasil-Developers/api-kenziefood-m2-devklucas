@@ -72,27 +72,27 @@
             </div>
         </div>
     </div>
-    <div class="modalContainer hidden">
+    <div class="modalContainer ">
         <div class="cabecalho modalCentralizado">
             <h3 id="tituloFormulario">Cadastro de Produto</h3>
             <button>X</button>
         </div>
         <form id="formularioEdicaoCadastro" class="formulario modalCentralizado">
-            <label for="nomeProduto">Nome do Produto</label>
+            <label  class= "tituloNomeProduto"for="nomeProduto">Nome do Produto</label>
             <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Digitar o nome">
-            <label for="descricaoProduto">Descrição</label>
+            <label class="descriçãoProduto" for="descricaoProduto">Descrição</label>
             <input type="text" name="descricaoProduto" id="descricaoProduto" placeholder="Digitar a  Descrição">
-            <label for="selecionarCategoria">Categorias</label>
+            <label class="selecaoCategoria" for="selecionarCategoria">Categorias</label>
             <div id="selecionarCategoria" class="opcoesSelecionar">
                 <button>Panificadora</button>
                 <button>Frutas</button>
                 <button>Bebidas</button>
             </div>
-            <label for="">Valor do Produto</label>
+            <label class="valorDoProduto" for="">Valor do Produto</label>
             <input type="number" name="valorProduto" id="valorProduto" placeholder="Digitar o valor aqui">
-            <label for="linkImagem">Link da Imagem</label>
+            <label class="linkImgProduto" for="linkImagem">Link da Imagem</label>
             <input type="url" name="linkImagem" id="linkImagem" placeholder="Inserir Link">
-            <button type="submit">Cadastrar Produto</button>
+            <button id="botaoCadastroProduto" type="submit">Cadastrar Produto</button>
         </form>
 
     </div>

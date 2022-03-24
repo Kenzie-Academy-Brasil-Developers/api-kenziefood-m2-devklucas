@@ -70,6 +70,7 @@ button{
     cursor: pointer;
 }
 
+
 @media screen and (max-width: 375px) {
     main{
         width: 300px;
@@ -120,4 +121,6 @@ button{
         margin: 0 auto;
         margin-top: 10px;
     }
+ 
+
 }

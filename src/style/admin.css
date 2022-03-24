@@ -402,14 +402,16 @@ nav{
 }
 
 .cabecalho{
+    background: #F8F9FA;
     display: flex;
+    justify-content: center;
     width: 496px;
     height: 70px;
-    background: #F8F9FA;
     border-radius: 8px 8px 0px 0px;
 }
 
 .cabecalho h3{
+    width: 250px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -442,12 +444,93 @@ nav{
     background-color: #FFFFFF;
     border-radius: 0 0 8px 8px;
 }
+#formularioEdicaoCadastro{
+    width: 496px;
+    height: 685px;
+}
+.tituloNomeProduto{
+    align-items: center;
+    width: 150px;
+    height: 20px;
+    color: #212529;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    margin: 25px 350px 0px 30px;
+}
+
+#nomeProduto{
+    width: 440px;
+    height: 52px;
+    background: #F8F9FA;
+    border: 1.5px solid #DEE2E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16;
+    color: #868E96;
+    padding: 15px;
+    margin: 10px 28px 40px 28px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+.descriçãoProduto {
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0px;
+    color: #212529;
+    margin-left: 28px;
+    margin-bottom: 10px;
+}
+
+#descricaoProduto{
+    background: #F8F9FA;
+    width: 440px;
+    height: 52px;
+    border: 1.5px solid #DEE2E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0px 28px 40px 28px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.selecaoCategoria{
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0px;
+    color: #212529;
+    margin-left: 28px;
+    margin-bottom: 10px;
+    
+}
+
+#selecionarCategoria{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .textoExcluir p{
     margin: 50px 60px 50px 60px;
 }
 
 .opcoesSelecionar{
+    margin-top: 0;
     width: 496px;
     height: 52px;
     display: flex;
@@ -457,12 +540,84 @@ nav{
 
 .opcoesSelecionar button{
     width: 150px;
-    height: 49px;
+    height: 40px;
     border: 1.5px solid #F8F9FA;
     box-sizing: border-box;
     border-radius: 32px;
     background: #F8F9FA;
     margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.valorDoProduto{
+    width: 150px;
+    height: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #212529;
+    margin-left: 28px;
+}
+#valorProduto{
+    width: 440px;
+    height: 52px;
+    border: 1.5px solid #DEE2E6;
+    background: #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 16px 28px 40px 28px;
+    padding: 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+#linkImagem{
+    width: 440px;
+    height: 52px;
+    border: 1.5px solid #DEE2E6;
+    background: #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 16px 28px 40px 28px;
+    padding: 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.linkImgProduto{
+    width: 150px;
+    height: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #212529;
+    margin-left: 28px;
+    
+}
+
+#botaoCadastroProduto{
+    width: 440px;
+    height: 52px;
+    padding: 15px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1.5px solid #FF2253;
+    box-sizing: border-box;
+    border-radius: 32px;
+    background: #FF2253;
+    color: white;
+    margin: 10px 28px 100px 28px;
 }
 
 .modalCentralizado {
