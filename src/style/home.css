@@ -241,7 +241,7 @@ main{
 
     .containerCarrinho{
         position: sticky;
-        z-index:-1;
+        top: 77;
 
         width: 320px;
         height: 352px;
@@ -269,8 +269,6 @@ main{
         align-items: center;
         justify-content: center;
         text-align: center;
-
-
     }
 
     .containerVitrine{
