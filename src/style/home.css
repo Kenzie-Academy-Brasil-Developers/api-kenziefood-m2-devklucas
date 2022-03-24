@@ -118,6 +118,9 @@ main{
     margin-right: 43px;
 }
 
+
+
+
 /* || Carrinho */
 
 .containerCarrinho{
@@ -147,6 +150,10 @@ main{
 
     position:fixed;
 	bottom:0;
+}
+.containerHeaderCarrinho i{
+    margin-top: 10px;
+    margin-left: 8px;
 }
 
 .containerQuantidadeCarrinho{
@@ -201,6 +208,9 @@ main{
     header{
         position: fixed;
         top: 0;
+    }
+    .containerCardProduto{
+        display: flex;
     }
 
     nav{       
@@ -263,8 +273,107 @@ main{
 
         justify-content: space-between;
         padding: 50px 100px;
-    }
+    }    
 
 }
 
+/**/
+@media (max-width: 375px) {
+    main{
+        width: 375px;
+    }
 
+    .containerLogo{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .logoFood{
+        margin-top: 5px;
+    }
+
+    .containerPesquisarLogar{
+        width: 375px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .containerLogo.span{
+        font-size: 14px;
+    }
+    .inputPesquisarProduto{
+        width: 150px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .containerHeaderProduto img{
+        width: 200px;
+        margin-left: 40%;
+    }
+    .btnPrincipal{
+        width: 150px;
+        height: 30px;
+    }
+    .containerFiltros{
+        width: 100%px;
+        display: flex;
+        margin: 5px;
+        
+    }
+    .btnProdutoCategoria{
+        width: 100px;
+        height: 15px;
+        padding: 3px;
+        font-size: 12px;
+        margin: 0;
+
+    }
+
+
+    .iconMargin{
+        margin-right: 5px;
+        width: 15px;
+    }
+    .containerVitrine{
+        width: 375px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containerCardProduto{
+        width: 370px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .listaProdutos{
+        width: 375px;
+        display: flex;
+    }
+    .containerDetalhesProduto{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerDetalhesProduto h1{
+        font-size: 14px;
+        margin: auto;
+    }
+    .containerDetalhesProduto {
+        font-size: 10px;
+    }
+    .marginTopBottom10px{
+        font-size: 12px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .footerCarrinho{
+        width: 375px;
+        height: 40px;
+    }
+    .btnCarrinho {
+        margin-right: 35px;
+    }
+}

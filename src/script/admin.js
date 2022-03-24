@@ -40,3 +40,7 @@ const campoBuscaNome = document.querySelector(".pesquisa input")
 //     const idProduct = //numero do id do produto
 //     CrudProdutos.apagarMeusProdutos(token,idProduct)   
 // }
+
+function opcaoExcluir(){
+    
+}
