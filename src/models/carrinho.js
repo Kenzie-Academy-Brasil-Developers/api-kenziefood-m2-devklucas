@@ -28,7 +28,7 @@ export class Carrinho{
                     <p class="infoProduto categoriaProduto">${produto.categoria}</p>
                     <span class="infoProduto precoProduto">${preco}</span>
                 </div>
-                <button id="btnExcluir${produto.id}" class="btnRemoverCarrinho marginTopBottom10px">
+                <button id="btnExcluir${produto.id}" class="btnRemoverCarrinho">
                     <i class="fa-solid fa-trash"></i>
                 </button>
                 `

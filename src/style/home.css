@@ -81,9 +81,8 @@ nav{
 
 main{
     width: 100%;
-    overflow-x: auto;
+    
 }
-
 
 .containerFiltros{
     display: flex;
@@ -108,8 +107,6 @@ main{
 
     flex-direction: row;
 
-    flex-wrap: wrap;
-
     margin-top: 25px;
     min-width: 692px;
 }
@@ -120,8 +117,12 @@ main{
 
 /* || Carrinho */
 
-aside {
+.sidebar {
+    position: sticky;
+    top: 200px;
+
     z-index: 0;
+    
 }
 
 .containerCarrinho{
@@ -158,16 +159,22 @@ aside {
 
     height: 100%;
     width: 100%;
+
+    padding: 15px;
 }
 
 .containerQuantidadeCarrinho{
+    text-align: center;
     height: 58px;
+    width: 320px;
 
     background: #F8F9FA;
 }
 
 .containerTotalCarrinho{
+    text-align: center;
     height: 58px;
+    width: 100%;
 
     background-color: #FFFFFF;
 }
@@ -241,6 +248,10 @@ aside {
 
     /* || Main */
 
+    .listaProdutos{
+        flex-wrap: wrap;
+        
+    }
     .containerFiltros{
         margin-top: 100px;
         margin-left: 100px;
