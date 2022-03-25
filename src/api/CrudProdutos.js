@@ -21,20 +21,21 @@ export class CrudProdutos{
     }
     
     static async adicionarMeusProdutos(token,data){
-        const resposta = await fetch(`${this.ROTA}/my/products`,{
+        const dadoResposta = await fetch(`${this.ROTA}/my/products`,{
             method : "POST",
             headers : {
                 "Content-Type" : "application/json",
                 "Authorization": `Bearer ${token}`},
             body:JSON.stringify(data)
        })
-        const dadosResposta = await resposta.json()
-            CrudProdutos.pegarMeusProdutos()//Retorna dados do produto criado(id,nome,preco,categoria,urlImagem, descrição)
+       .then(resposta =>resposta.json())
+       .catch(erro => console.log(erro))
+        return CrudProdutos.pegarMeusProdutos()//Retorna dados do produto criado(id,nome,preco,categoria,urlImagem, descrição)
         
     }
 
     static async editarMeusProdutos(token,idProduto, data){
-        const resposta = await fetch(`${this.ROTA}/my/products/${idProduto}`,{
+        const dadosResposta = await fetch(`${this.ROTA}/my/products/${idProduto}`,{
             method : "PATCH",
             headers : {
                 "Content-Type" : "application/json",
@@ -42,7 +43,8 @@ export class CrudProdutos{
             body:JSON.stringify(data)
           
        })
-       const dadosResposta = await resposta.json()
+       .then(resposta.json())
+       .catch(erro => erro)
        return dadosResposta//Retorna "Produto Atualizado" ou mensagem de erro
     }
     static async apagarMeusProdutos(token,idProduto){
@@ -52,7 +54,7 @@ export class CrudProdutos{
                 "Authorization": `Bearer ${token}`
             }
         })
-         return CrudProdutos.pegarMeusProdutos()
+        return CrudProdutos.pegarMeusProdutos()
         // const dadosResposta = await resposta.json()
         // return dadosResposta //api só retorna mensagem de erro, em caso de sucesso nao há retorno
     }
