@@ -1,3 +1,31 @@
+/* || Modal */
+.modalCarrinho {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 /* || Header */
 header{
     width: 100%;
@@ -67,6 +95,10 @@ nav{
     margin-right: 15px;
 }
 
+.iconMargin4x{
+    margin: 15px;
+}
+
 /* || Buttons */
 
 .btnlogin{
@@ -81,9 +113,8 @@ nav{
 
 main{
     width: 100%;
-    overflow-x: auto;
+    
 }
-
 
 .containerFiltros{
     display: flex;
@@ -108,8 +139,6 @@ main{
 
     flex-direction: row;
 
-    flex-wrap: wrap;
-
     margin-top: 25px;
     min-width: 692px;
 }
@@ -123,7 +152,18 @@ main{
 
 /* || Carrinho */
 
+.sidebar {
+    position: sticky;
+    top: 200px;
+
+    z-index: 0;
+    
+}
+
 .containerCarrinho{
+    position: fixed;
+    bottom: -538px;
+
     width: 320px;
     height: 583px;
 
@@ -132,7 +172,9 @@ main{
     justify-content: center;
     align-items: center;
 
-    flex-direction: row;
+    flex-direction: column;
+
+    background: #FFFFFF;
 }
 
 .containerHeaderCarrinho{
@@ -147,9 +189,16 @@ main{
 
     background: #FF2253;
     border-radius: 8px 8px 0px 0px;
+}
 
-    position:fixed;
-	bottom:0;
+.listaProdutosCarrinho {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 15px;
 }
 .containerHeaderCarrinho i{
     margin-top: 10px;
@@ -157,20 +206,25 @@ main{
 }
 
 .containerQuantidadeCarrinho{
+    text-align: center;
     height: 58px;
+    width: 320px;
 
     background: #F8F9FA;
 }
 
 .containerTotalCarrinho{
+    text-align: center;
     height: 58px;
+    width: 100%;
 
     background-color: #FFFFFF;
 }
 
-.containerCardProdutoCarrinho{
+.produtoCarrinhoContainer{
     width: 300px;
     height: 84px;
+    display: flex;
 }
 
 .containerImagemProdutoCarrinho{
@@ -239,6 +293,10 @@ main{
 
     /* || Main */
 
+    .listaProdutos{
+        flex-wrap: wrap;
+        
+    }
     .containerFiltros{
         margin-top: 100px;
         margin-left: 100px;
@@ -247,7 +305,7 @@ main{
 
     .containerCarrinho{
         position: sticky;
-        z-index:-1;
+        top: 77;
 
         width: 320px;
         height: 352px;
@@ -263,8 +321,18 @@ main{
     }
 
     .containerHeaderCarrinho{
-        position: absolute;
-        top: 0;
+        position: absolute;    
+        top: -56px;
+    }
+
+    .containerProdutosCarrinho{
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .containerVitrine{
