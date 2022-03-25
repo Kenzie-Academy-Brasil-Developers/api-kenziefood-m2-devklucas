@@ -23,8 +23,8 @@ export class TemplateAdmin{
                     </div>
                     <div class="categoriaAcoes">
                         <span>
-                            <button><img src="../img/botaoEditarProduto.png" alt="editar produto"></button>
-                            <button><img src="../img/botaoApagarProduto.png" alt="apagar produto"></button>
+                            <button id="botaoEditarProduto"><img src="../img/botaoEditarProduto.png" alt="editar produto"></button>
+                            <button id="botaoExcluirProduto"><img src="../img/botaoApagarProduto.png" alt="apagar produto"></button>
                         </span>
                     </div>`
             container.appendChild(li)
