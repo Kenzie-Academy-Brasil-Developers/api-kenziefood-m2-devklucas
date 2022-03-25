@@ -70,6 +70,42 @@ button{
     cursor: pointer;
 }
 
+/* || pop up de erro*/
+.popUpErro {
+    width: 330px;
+    height: 135px;
+
+    position:absolute;
+    right: 0;
+    bottom: 0; 
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 8px; 
+    border-bottom: solid 8px #FF2253;
+    background-color: #FFFFFF;
+}
+
+.tituloPopUp {   
+    border-radius: 8px;
+
+    background-color: #F8F9FA;
+
+    font-family: 'Poppins';
+}
+
+.respostaPopUp {  
+    font-family: 'Poppins';
+    color: #212529;
+    margin: 15px 20px ;
+}
+
+.fadeOutPopUp {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
 @media screen and (max-width: 375px) {
     main{
         width: 300px;
@@ -120,4 +156,6 @@ button{
         margin: 0 auto;
         margin-top: 10px;
     }
+ 
+
 }
