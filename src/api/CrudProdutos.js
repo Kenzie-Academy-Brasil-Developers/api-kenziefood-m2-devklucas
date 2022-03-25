@@ -27,11 +27,12 @@ export class CrudProdutos{
                 "Content-Type" : "application/json",
                 "Authorization": `Bearer ${token}`},
             body:JSON.stringify(data)
-          
        })
-       const dadosResposta = await resposta.json()
-       return dadosResposta //Retorna dados do produto criado(id,nome,preco,categoria,urlImagem, descrição)
+        const dadosResposta = await resposta.json()
+            CrudProdutos.pegarMeusProdutos()//Retorna dados do produto criado(id,nome,preco,categoria,urlImagem, descrição)
+        
     }
+
     static async editarMeusProdutos(token,idProduto, data){
         const resposta = await fetch(`${this.ROTA}/my/products/${idProduto}`,{
             method : "PATCH",
@@ -46,13 +47,14 @@ export class CrudProdutos{
     }
     static async apagarMeusProdutos(token,idProduto){
         const resposta = await fetch(`${this.ROTA}/my/products/${idProduto}`,{
-            method: "Delete",
+            method: "DELETE",
             headers: {
                 "Authorization": `Bearer ${token}`
             }
         })
-        const dadosResposta = await resposta.json()
-        return console.log(dadosResposta) //api só retorna mensagem de erro, em caso de sucesso nao há retorno
+         return CrudProdutos.pegarMeusProdutos()
+        // const dadosResposta = await resposta.json()
+        // return dadosResposta //api só retorna mensagem de erro, em caso de sucesso nao há retorno
     }
 } 
 
