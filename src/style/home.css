@@ -199,7 +199,9 @@ main{
     width: 100%;
 
     padding: 15px;
+
 }
+
 .containerHeaderCarrinho i{
     margin-top: 10px;
     margin-left: 8px;
@@ -315,9 +317,13 @@ main{
         align-items: center;
         justify-content: center;
 
-        background: #F8F9FA;    
+        background: #FFF;    
 
         border-radius: 0px 0px 12px 12px;
+    }
+
+    .containerCarrinhoVazio {
+        background: #F8F9FA;  
     }
 
     .containerHeaderCarrinho{
