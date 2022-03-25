@@ -8,13 +8,14 @@ export class VitrineProdutos {
     vitrinePrincipal.innerHTML = ""
 
     arrayProdutos.forEach((item)=>{
-      const li = this.templateVitrine(item, arrayProdutos)
+      const li = this.templateVitrine(item)
       vitrinePrincipal.appendChild(li)
 
     })
   }
 
-  static templateVitrine({id,nome,preco,categoria,descricao,imagem},arrayProdutos){
+  static templateVitrine(produto){
+    const {id,nome,preco,categoria,descricao,imagem} = produto
     const li  = document.createElement("li")
     li.classList.add("containerCardProduto")
 
@@ -35,7 +36,12 @@ export class VitrineProdutos {
     </div>
     `
     const btnCarrinho = li.querySelector('button')
-    btnCarrinho.addEventListener('click', () => Carrinho.adicionarCarrinho(arrayProdutos, btnCarrinho.id))
+    btnCarrinho.addEventListener('click', () => {
+      Carrinho.listaProdutosSalva.push(produto)
+      Carrinho.adicionarCarrinho(Carrinho.listaProdutosSalva)
+
+      localStorage.setItem('produtosCarrinho', JSON.stringify(Carrinho.listaProdutosSalva))
+    })
   
     return li
   }
