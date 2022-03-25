@@ -2,6 +2,30 @@ import { Api } from '../api/Api.js'
 import { VitrineProdutos } from '../models/vitrine-produtos.js'
 import { Carrinho } from '../models/carrinho.js'
 
+//VALIDAÇÃO ADMIN   
+const btnAdmin = document.querySelector('.btnAdmin');
+btnAdmin.addEventListener('click', () => {
+    const token = JSON.parse(localStorage.getItem('token'));
+
+    if(token){
+       window.location.href='./src/pages/admin.html';
+    } else {
+        const janela = document.querySelector('body');
+           const popUp = document.createElement('div');
+           popUp.classList.add('popUpErro')
+           popUp.innerHTML = `
+                <p class="tituloPopUp"> Error </p>
+                <p class="respostaPopUp">Para entrar na aba de Administrador é necessário fazer Login</p>   
+           `
+           janela.appendChild(popUp)
+           setTimeout(() => {
+               popUp.classList.add('fadeOutPopUp')
+               setTimeout(() => popUp.remove(), 1000)
+           }, 3000);
+    }
+})
+
+// apresentação produtos
 const arrayProdutos = await Api.requestProdutos()
 
 VitrineProdutos.listarProdutos(arrayProdutos)
@@ -52,4 +76,5 @@ if(produtosTratados) {
 
 const modalCarrinho = document.getElementById('containerCarrinho')
 modalCarrinho.addEventListener('click', () => Carrinho.mostrarModal())
+
 
