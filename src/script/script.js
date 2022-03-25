@@ -1,6 +1,6 @@
 import { Api } from '../api/Api.js'
-import { VitrineProdutos } from '../models/Vitrine-produtos.js'
-import { Carrinho } from '../models/Carrinho.js'
+import { VitrineProdutos } from '../models/vitrine-produtos.js'
+import { Carrinho } from '../models/carrinho.js'
 
 const arrayProdutos = await Api.requestProdutos()
 
@@ -22,7 +22,7 @@ const inputBusca = document.getElementById('inputPesquisarProduto')
 
 inputBusca.addEventListener('keyup', () => VitrineProdutos.buscarProdutos())
 
-const containerProdutos = document.querySelector('.containerCarrinho')
+const containerProdutos = document.querySelector('#containerCarrinho')
 //criando container para a lista de produtos
 const listaCarrinho = document.createElement('ul');
 listaCarrinho.classList.add('listaProdutosCarrinho');
@@ -33,16 +33,22 @@ const containerDadosCarrinho = document.createElement('div');
 containerDadosCarrinho.classList.add('containerDadosCarrinho')
 containerDadosCarrinho.classList.add('hidden')
 containerDadosCarrinho.innerHTML = `
-    <div class="containerQuantidadeCarrinho">
-        <span>Quantidade</span>
-        <span id="qtdTotalCompra">0</span>
-    </div>
-    <div class="containerTotalCarrinho">
-        <span>Total</span>
-        <span id="precoTotalCompra">R$ 0,00</span>
-    </div>
+<div class="containerQuantidadeCarrinho">
+<span>Quantidade</span>
+<span id="qtdTotalCompra">0</span>
+</div>
+<div class="containerTotalCarrinho">
+<span>Total</span>
+<span id="precoTotalCompra">R$ 0,00</span>
+</div>
 `
 containerProdutos.appendChild(containerDadosCarrinho)
+//gerando lista de produtos do Local Storage
+const produtosLocalStorage = localStorage.getItem('produtosCarrinho')
+const produtosTratados = JSON.parse(produtosLocalStorage)
+if(produtosTratados) {
+    Carrinho.adicionarCarrinho(produtosTratados)
+}
 
 const modalCarrinho = document.getElementById('containerCarrinho')
 modalCarrinho.addEventListener('click', () => Carrinho.mostrarModal())

@@ -28,6 +28,7 @@
                     <i class="fa-solid fa-user iconMargin"></i>
                     Login
                 </button>
+                <button class="btnPrincipal btnAdmin" onclick="window.location.href='./src/pages/admin.html';">Admin</button>
             </div>
         </nav>
     </header>
@@ -58,7 +59,7 @@
 
             </ul>
             <div class="sidebar">
-                <section id="containerCarrinho" class="containerCarrinho">
+                <section id="containerCarrinho" class="containerCarrinho containerCarrinhoVazio">
                     <div class="containerHeaderCarrinho">
                         <i class="fa-solid fa-cart-plus iconMargin"></i>
                         Carrinho
@@ -67,12 +68,7 @@
                         <img class="iconMargin4x" src="./src/img/shopping-bag.svg" alt="sacola">    
                         <p class="pCarrinho">Por enquanto não temos produtos no carrinho</p>
 
-                    </div>
-
-                    <div hidden class="containerQuantidadeCarrinho"></div>
-                    <div hidden class="containerTotalCarrinho"></div>
-
-        
+                    </div>        
                 </section>
             </div>
         </section>
