@@ -33,7 +33,7 @@
             <button class="adicionarproduto">Adicionar novo produto</button>
         </nav>
         <ul class='listadeProdutos'>
-           <li class="tituloListaProdutos hidden">
+            <li class="tituloListaProdutos hidden">
                 <div class="tituloProduto">
                     <p>Produto</p>
                 </div>
@@ -48,7 +48,7 @@
                 </div>
             </li>
         </ul>
-        
+
     </main>
     <div class="status hidden">
         <div class="cabecalhoStatus">
@@ -59,12 +59,12 @@
     </div>
     <div class="modalContainer Excluir hidden">
         <div class="todosExcluir">
-            <div class="cabecalho">
+            <div class="cabecalhoExclusaoProduto">
                 <p>Exclusão de Produto</p>
                 <button>X</button>
             </div>
             <div class="textoExcluir">
-                <h3>Tem certeza que deseja excluir esse produto?</h3>
+                <h3 id="h3Excluir">Tem certeza que deseja excluir esse produto?</h3>
                 <div class="opcoesSelecionar">
                     <button class='Sim'>Sim</button>
                     <button class='Nao'>Não</button>
@@ -132,4 +132,5 @@
         </div>
         <script type="module" src="../script/admin.js"></script>
 </body>
+
 </html>

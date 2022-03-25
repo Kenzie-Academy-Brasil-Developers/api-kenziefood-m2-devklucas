@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
 /* || Fonts */
 
 body{
@@ -37,6 +36,12 @@ span{
     font-weight: 400;
 }
 
+.pCarrinho{
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #868E96;
+}
 
 /* || Buttons */
 
@@ -130,12 +135,15 @@ button{
 }
 
 .btnRemoverCarrinho{
+    z-index: 0;
+
     width: 25px;
     height: 25px;
 
     color: #868E96;
 
     background: #F8F9FA;
+    border: 1.5px solid #F8F9FA;
     border-radius: 4px;
 }
 
@@ -162,5 +170,9 @@ button{
 
 .containerDetalhesProduto{
     height: 173px;
+}
+
+.hidden {
+    display:none !important;
 }
 
