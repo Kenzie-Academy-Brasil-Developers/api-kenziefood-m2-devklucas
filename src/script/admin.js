@@ -41,6 +41,25 @@ const campoBuscaNome = document.querySelector(".pesquisa input")
 //     CrudProdutos.apagarMeusProdutos(token,idProduct)   
 // }
 
-function opcaoExcluir(){
-    
+
+// Eventos dos Botões
+
+//Botão Cadastrar Produto
+let adicionaNovoProdutoBotao = document.querySelector(".adicionarproduto")
+adicionaNovoProdutoBotao.addEventListener("click", mostrarModalAdicionarProduto)
+
+// Função Mostrar Modal Adicionar Novo Produto
+function mostrarModalAdicionarProduto(){
+    let modalAdicionarProduto = document.querySelector("#modalCadastroProduto")
+    modalAdicionarProduto.classList.remove("hidden")    
+}
+
+//Botão Fechar Adicionar Produto
+let fecharAdicionaProduto = document.querySelector("#fecharCadastroProduto")
+fecharAdicionaProduto.addEventListener("click", fecharModalAdicionarProduto)
+
+// Função Fechar Modal Adicionar Novo Produto
+function fecharModalAdicionarProduto(){
+    let modalAdicionarProduto = document.querySelector("#modalCadastroProduto")
+    modalAdicionarProduto.classList.add("hidden")
 }
