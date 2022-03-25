@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/admin.css">
+</head>
+
+<body>
+    <header>
+        <div class="kenzieFood">
+            <h1>Kenzie</h1>
+            <h2>Food</h2>
+        </div>
+        <div class="pesquisa">
+            <input type="text" placeholder=" Pesquisar por produto">
+            <img src="../img/profileFix.png" alt="foto de perfil usaário">
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <div class="categoria">
+                <button class="todos">Todos </button>
+                <button class="panificadora"><img src="../img/pao.png" alt=""> Panificadora</button>
+                <button class="frutas"> <img src="../img/fruta.png" alt=""> Frutas</button>
+                <button class="bebidas"><img src="../img/copo.png" alt=""> Bebidas</button>
+            </div>
+            <button class="adicionarproduto">Adicionar novo produto</button>
+        </nav>
+        <ul class='listadeProdutos'>
+            <li class="tituloListaProdutos hidden">
+                <div class="tituloProduto">
+                    <p>Produto</p>
+                </div>
+                <div class="tituloCategoria">
+                    <p>Categoria</p>
+                </div>
+                <div class="tituloDescricao">
+                    <p>Descrição</p>
+                </div>
+                <div class="tituloAcoes">
+                    <p>Ações</p>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+    <div class="status hidden">
+        <div class="cabecalhoStatus">
+            <p> Status </p>
+            <button> X </button>
+        </div>
+        <p class="informacaoStatus"> Produto nao adicionado</p>
+    </div>
+    <div class="modalContainer Excluir hidden">
+        <div class="todosExcluir">
+            <div class="cabecalhoExclusaoProduto">
+                <p>Exclusão de Produto</p>
+                <button>X</button>
+            </div>
+            <div class="textoExcluir">
+                <h3 id="h3Excluir">Tem certeza que deseja excluir esse produto?</h3>
+                <div class="opcoesSelecionar">
+                    <button class='Sim'>Sim</button>
+                    <button class='Nao'>Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modalContainer Cadastrar hidden">
+            <div class="cabecalho modalCentralizado">
+                <h3 id="tituloFormulario">Cadastro de Produto</h3>
+                <button id="Fechar">X</button>
+            </div>
+                <form id="formularioCadastro" class="formulario modalCentralizado">
+                    <label for="nomeProduto">Nome do Produto</label>
+                    <input type="text" name="nome" id="nomeProduto" placeholder="Digitar o nome">
+                    <label for="descricaoProduto">Descrição</label>
+                    <input type="text" name="descricao" id="descricaoProduto" placeholder="Digitar a  Descrição">
+                    <div id="selecionarCategoria" class="opcoesSelecionar">
+                    <input id='fruta' type="radio" name="categoria" value="fruta">
+                    <label for="fruta">Fruta</label>
+                    </div>
+                    <div id="selecionarCategoria" class="opcoesSelecionar">
+                        <input id='panificadora' type="radio" name="categoria" value="panificadora">
+                        <label for="panificadora">Panificadora</label>
+                    </div>
+                    <div id="selecionarCategoria" class="opcoesSelecionar">
+                        <input id='bebidas' type="radio" name="categoria" value="bebidas">
+                        <label for="bebidas">Bebidas</label>
+                    </div> 
+                    <label for="">Valor do Produto</label>
+                    <input type="number" name="preco" id="valorProduto" placeholder="Digitar o valor aqui">
+                    <label for="linkImagem">Link da Imagem</label>
+                    <input type="url" name="imagem" id="linkImagem" placeholder="Inserir Link">
+                    <button id='submit' type="submit">Cadastrar Produto</button>
+                </form>
+        </div>
+        <div class="modalContainer Editar hidden ">
+            <div class="cabecalho modalCentralizado">
+                <h3 id="tituloFormulario">Edição de Produto</h3>
+                <button>X</button>
+            </div>
+                <form id="formularioEdicaoCadastro" class="formulario modalCentralizado">
+                    <label for="nomeProduto">Nome do Produto</label>
+                    <input type="text" name="nome" id="nomeProduto" placeholder="Digitar o nome">
+                    <label for="descricaoProduto">Descrição</label>
+                    <input type="text" name="descricao" id="descricaoProduto" placeholder="Digitar a  Descrição">
+                    <div id="selecionarCategoria" class="opcoesSelecionar">
+                    <input id='fruta' type="radio" name="categoria" value="fruta">
+                    <label for="fruta">Fruta</label>
+                    </div>
+                    <div id="selecionarCategoria" class="opcoesSelecionar">
+                        <input id='panificadora' type="radio" name="categoria" value="panificadora">
+                        <label for="panificadora">Panificadora</label>
+                    </div>
+                    <div id="selecionarCategoria" class="opcoesSelecionar">
+                        <input id='bebidas' type="radio" name="categoria" value="bebidas">
+                        <label for="bebidas">Bebidas</label>
+                    </div> 
+                    <label for="">Valor do Produto</label>
+                    <input type="number" name="preco" id="valorProduto" placeholder="Digitar o valor aqui">
+                    <label for="linkImagem">Link da Imagem</label>
+                    <input type="url" name="imagem" id="linkImagem" placeholder="Inserir Link">
+                    <button id='submitEdit' type="submit">Salvar Alterações</button>
+                </form>
+        </div>
+        <script type="module" src="../script/admin.js"></script>
+</body>
+
+</html>
